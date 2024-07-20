@@ -29,6 +29,10 @@ yabai --start-service
 ```zsh
 yabai --stop-service
 ```
+### 그외 yabai 커맨드
+```zsh
+yabai [--load-sa|--uninstall-sa|--install-service|--uninstall-service|--start-service|--restart-service|--stop-service|--message,-m msg|--config,-c config_file|--verbose,-V|--version,-v|--help,-h]
+```
 
 ### yabai 설정 파일 만들기(yabairc)
 
@@ -50,8 +54,9 @@ open ~/.config/yabai
 #### Yabai 명령어 구조와 키워드
 
 ```zsh
-yabai -m <command> [options] [arguments]
+yabai -m query <COMMAND> [<PROPERTIES>] [<ARGUMENT>]
 ```
+[yabai documentation](https://github.com/koekeishiya/yabai/blob/master/doc/yabai.asciidoc)
 
 1. yabai: Yabai 프로그램을 실행하는 기본 명령어입니다.
 2. -m: Yabai로 명령을 보내기 위한 플래그입니다.
