@@ -8,18 +8,7 @@ categories: python-basic
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pythonic Code</title>
-    <style>
-        .blindfold {
-            color: transparent;
-            background-color: black;
-            cursor: pointer;
-        }
-
-        .blindfold:hover {
-            color: black;
-            background-color: yellow;
-        }
-    </style>
+    
 </head>
 <body>
     <h1>Pythonic Code</h1>
@@ -330,20 +319,5 @@ asterisk_test(1, test)
 # <class 'tuple'>
     </code></pre>
 
-    <script>
-        document.addEventListener("DOMContentLoaded", function () {
-            const elements = document.querySelectorAll('.blindfold');
-
-            elements.forEach(element => {
-                element.addEventListener('click', function () {
-                    if (this.style.color === 'transparent') {
-                        this.style.color = 'black';
-                    } else {
-                        this.style.color = 'transparent';
-                    }
-                });
-            });
-        });
-    </script>
 </body>
 </html>
