@@ -20,7 +20,20 @@
     }
   });
 </script>
+<style>
+      .blindfold {
+          color: transparent;
+          background-color: black;
+          cursor: pointer;
+          transition: color 0.5s ease, background-color 0.5s ease;
+          user-select: none; /* 텍스트 선택 비활성화 */
+      }
 
+      .blindfold:hover {
+          color: black;
+          background-color: yellow;
+      }
+    </style>
   </head>
 
   <body class="layout--{{ page.layout | default: layout.layout }}{% if page.classes or layout.classes %}{{ page.classes | default: layout.classes | join: ' ' | prepend: ' ' }}{% endif %}" dir="{% if site.rtl %}rtl{% else %}ltr{% endif %}">
@@ -55,7 +68,21 @@
         {% include_cached footer.html %}
       </footer>
     </div>
+ <script>
+      document.addEventListener("DOMContentLoaded", function () {
+          const elements = document.querySelectorAll('.blindfold');
 
+          elements.forEach(element => {
+              element.addEventListener('click', function () {
+                  if (this.style.color === 'transparent') {
+                      this.style.color = 'black';
+                  } else {
+                      this.style.color = 'transparent';
+                  }
+              });
+          });
+      });
+    </script>
     {% include scripts.html %}
   </body>
 </html>
