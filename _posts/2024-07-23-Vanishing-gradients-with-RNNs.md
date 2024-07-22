@@ -11,6 +11,7 @@ categories: machine-learning
 1. 기울기 소실(Vanising gradients)
 
 > The **cat**, which already ate ..., **was** full
+
 > The **cats**, which already ate ..., **were** full
 
 위 예시는 언어가 매우 <span class="blindfold">장기적인 의존성</span>을 가질 수 있는 예
