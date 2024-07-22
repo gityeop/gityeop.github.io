@@ -29,7 +29,7 @@ categories: machine-learning
 
 이 떄문에 기본 RNN은 <span class="blindfold">local</span>의 영향을 많이 받는다.
 
-- $ \hat{y}^{<3>} $ 는 가까운 x^{<1>}, x^{<2>}, x^{<3>}의 영향을 받음
+- $ \hat{y}^{<3>} $ 는 가까운 $ x^{<1>}, x^{<2>}, x^{<3>} $ 의 영향을 받음
 - 오류가 시퀀스의 시작으로 <span class="blindfold">역전파</span>되는 것이 어려움
 
 2. 기울기 폭주(Exploding gradients)
