@@ -14,20 +14,20 @@ categories: machine-learning
 
 > The **cats**, which already ate ..., **were** full
 
-위 예시는 언어가 매우 <span class="blindfold">장기적인 의존성</span>을 가질 수 있는 예
+위 예시는 언어가 매우 <span class="blindfold" data-hint="Hint: 언어의 특성">장기적인 의존성</span>을 가질 수 있는 예
 
 - 앞서 쓰여진 단어(cat/ cats)가 문장 후반부에 영향을 미침
 
-하지만 기본 RNN은 <span class="blindfold">의존성</span>을 포착하는데 효과적이지 않음
+하지만 **기본 RNN**은 <span class="blindfold" data-hint="Hint: 기본 RNN의 한계">의존성</span>을 포착하는데 효과적이지 않음
 
-- 깊은 deep neural network의 <span class="blindfold">기울기 소멸</span> 문제
+- 깊은 deep neural network의 <span class="blindfold" data-hint="Hint: 결과">기울기 소멸</span> 문제
 
 신경망이 <span class="blindfold">암기</span>가 필요하다는 것을 인식하도록 하는 것이 어려울 수 있음
 
 - 단수형이면 was, 복수형이면 were이라는 사실을 외워야 한다는 사실
 - 영어는 삽입되는 관계절이 매우 길 수 있으므로 앞선 정보를 외워야할 수 있음
 
-이 떄문에 기본 RNN은 <span class="blindfold">local</span>의 영향을 많이 받는다.
+이 때문에 기본 RNN은 <span class="blindfold">local</span>의 영향을 많이 받는다.
 
 - $ \hat{y}^{<3>} $ 는 가까운 $ x^{<1>}, x^{<2>}, x^{<3>} $ 의 영향을 받음
 - 오류가 시퀀스의 시작으로 <span class="blindfold">역전파</span>되는 것이 어려움
