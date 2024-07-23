@@ -21,19 +21,39 @@
   });
 </script>
 <style>
-      .blindfold {
-          color: transparent;
-          background-color: black;
-          cursor: pointer;
-          transition: color 0.5s ease, background-color 0.5s ease;
-          user-select: none; /* 텍스트 선택 비활성화 */
-      }
+.blindfold {
+    color: transparent;
+    background-color: black;
+    cursor: pointer;
+    transition: color 0.5s ease, background-color 0.5s ease;
+    user-select: none;
+    position: relative;
+}
 
-      .blindfold:hover {
-          color: black;
-          background-color: yellow;
-      }
-    </style>
+.blindfold::after {
+    content: attr(data-hint);
+    position: absolute;
+    left: 0;
+    right: 0;
+    background-color: #f0f0f0;
+    color: black;
+    padding: 2px;
+    border-radius: 3px;
+    display: none;
+}
+
+.blindfold:hover::after {
+    display: block;
+    color: yellow;
+    background-color: blue;
+}
+
+.blindfold:hover {
+    color: black;
+    background-color: yellow;
+}
+
+</style>
   </head>
 
   <body class="layout--{{ page.layout | default: layout.layout }}{% if page.classes or layout.classes %}{{ page.classes | default: layout.classes | join: ' ' | prepend: ' ' }}{% endif %}" dir="{% if site.rtl %}rtl{% else %}ltr{% endif %}">
@@ -69,19 +89,22 @@
       </footer>
     </div>
  <script>
-      document.addEventListener("DOMContentLoaded", function () {
-          const elements = document.querySelectorAll('.blindfold');
+   document.addEventListener("DOMContentLoaded", function () {
+    const elements = document.querySelectorAll('.blindfold');
 
-          elements.forEach(element => {
-              element.addEventListener('click', function () {
-                  if (this.style.color === 'transparent') {
-                      this.style.color = 'black';
-                  } else {
-                      this.style.color = 'transparent';
-                  }
-              });
-          });
-      });
+    elements.forEach(element => {
+        element.addEventListener('click', function () {
+            if (this.style.color === 'transparent') {
+                this.style.color = 'black';
+                this.style.backgroundColor = 'transparent';
+            } else {
+                this.style.color = 'transparent';
+                this.style.backgroundColor = 'black';
+            }
+        });
+    });
+});
+
     </script>
     {% include scripts.html %}
   </body>
