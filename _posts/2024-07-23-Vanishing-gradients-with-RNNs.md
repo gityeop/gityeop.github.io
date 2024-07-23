@@ -14,13 +14,13 @@ categories: machine-learning
 
 > The **cats**, which already ate ..., **were** full
 
-위 예시는 언어가 매우 <span class="blindfold" data-hint="Hint: 언어의 특성">장기적인 의존성</span>을 가질 수 있는 예
+위 예시는 언어가 매우 <span class="blindfold" data-hint="언어의 특성">장기적인 의존성</span>을 가질 수 있는 예
 
 - 앞서 쓰여진 단어(cat/ cats)가 문장 후반부에 영향을 미침
 
-하지만 **기본 RNN**은 <span class="blindfold" data-hint="Hint: 기본 RNN의 한계">의존성</span>을 포착하는데 효과적이지 않음
+하지만 **기본 RNN**은 <span class="blindfold" data-hint="기본 RNN의 한계">의존성</span>을 포착하는데 효과적이지 않음
 
-- 깊은 deep neural network의 <span class="blindfold" data-hint="Hint: 결과">기울기 소멸</span> 문제
+- 깊은 deep neural network의 <span class="blindfold" data-hint="결과">기울기 소멸</span> 문제
 
 신경망이 <span class="blindfold">암기</span>가 필요하다는 것을 인식하도록 하는 것이 어려울 수 있음
 
