@@ -23,17 +23,17 @@
 <style>
 .blindfold {
     color: transparent;
+    position: relative;
     background-color: black;
     cursor: pointer;
+    border-radius: 3px;
     transition: color 0.5s ease, background-color 0.5s ease;
     user-select: none;
-    border-radius: 3px;
-    position: relative;
 }
 
 .blindfold::before {
     content: attr(data-hint);
-    position: absolute;
+    position: relative;
     background-color: black;
     color: white;
     border-radius: 3px;
