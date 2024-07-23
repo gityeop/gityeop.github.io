@@ -30,7 +30,7 @@
     position: relative;
 }
 
-.blindfold::after {
+.blindfold::before {
     content: attr(data-hint);
     position: absolute;
     left: 0;
@@ -39,19 +39,18 @@
     color: black;
     padding: 2px;
     border-radius: 3px;
-    display: none;
+    white-space: nowrap;
 }
 
-.blindfold:hover::after {
-    display: block;
-    color: yellow;
-    background-color: blue;
+.blindfold:hover::before {
+    display: none;
 }
 
 .blindfold:hover {
     color: black;
     background-color: yellow;
 }
+
 
 </style>
   </head>
