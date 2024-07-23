@@ -34,12 +34,18 @@
 .blindfold::before {
     content: attr(data-hint);
     position: absolute;
-    left: 0;
-    right: 0;
+    bottom: 100%; /* 힌트를 위로 이동 */
+    left: 50%;
+    transform: translateX(-50%);
     background-color: black;
     color: white;
     border-radius: 3px;
     white-space: nowrap;
+    text-align: center;
+    visibility: visible;
+    opacity: 1;
+    transition: visibility 0.5s, opacity 0.5s ease;
+    z-index: 1;
 }
 
 .blindfold:hover::before {
