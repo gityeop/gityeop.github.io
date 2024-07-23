@@ -34,14 +34,11 @@
 .blindfold::before {
     content: attr(data-hint);
     position: absolute;
+    left: 0;
+    right: 0;
     background-color: black;
     color: white;
-    border-radius: 3px;
     white-space: nowrap;
-    text-align: center;
-    z-index: 1;
-    left: 50%;
-    transform: translateX(-50%);
 }
 
 .blindfold:hover::before {
