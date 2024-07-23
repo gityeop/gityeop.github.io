@@ -18,7 +18,7 @@ categories: machine-learning
 
 - 앞서 쓰여진 단어(cat/ cats)가 문장 후반부에 영향을 미침
 
-하지만 **기본 RNN**은 <span class="blindfold" data-hint="기본 RNN의 한계">의존성</span>을 포착하는데 효과적이지 않음
+하지만 **기본 RNN**은 <span class="blindfold" data-hint="한계">의존성</span>을 포착하는데 효과적이지 않음
 
 - 깊은 deep neural network의 <span class="blindfold" data-hint="결과">기울기 소멸</span> 문제
 
