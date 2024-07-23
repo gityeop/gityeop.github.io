@@ -89,7 +89,7 @@
       </footer>
     </div>
  <script>
-   document.addEventListener("DOMContentLoaded", function () {
+document.addEventListener("DOMContentLoaded", function () {
     const elements = document.querySelectorAll('.blindfold');
 
     elements.forEach(element => {
@@ -97,13 +97,18 @@
             if (this.style.color === 'transparent') {
                 this.style.color = 'black';
                 this.style.backgroundColor = 'transparent';
+                this.dataset.hint = ''; // 힌트를 없앰
             } else {
                 this.style.color = 'transparent';
                 this.style.backgroundColor = 'black';
+                this.dataset.hint = this.getAttribute('data-original-hint'); // 원래 힌트를 복원
             }
         });
+        // 원래 힌트를 저장
+        element.setAttribute('data-original-hint', element.getAttribute('data-hint'));
     });
 });
+
 
     </script>
     {% include scripts.html %}
