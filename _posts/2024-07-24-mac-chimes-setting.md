@@ -12,13 +12,13 @@ categories: productivity
 
 ---
 
-1. 차임벨 구하기
+1.차임벨 구하기
 
 인터넷에서 다운받을 수 있는 마음에 드는 차임벨 mp3 파일을 다운 받는다. 개인 용도로 사용할 것이기 때문에 저작권의 위험은 괜찮을 것 같다. 하지만 그래도 찝찝하다면 아래의 사이트에서 무료 차임벨을 다운 받는 것을 추천한다.
 
 [무료 차임벨](https://mixkit.co/free-sound-effects/bell/)
 
-2. 스크립트 작성하기
+2.스크립트 작성하기
 
 이제 이 차임벨을 울리게 할 스크립트를 작성할 차례이다. 재생은 간단히 **afplay**라는 명령어로 한다. afplay 명령어는 macOS의 기본 제공 유틸리티 중 하나로, 별도로 다운로드하거나 설치할 필요가 없다.
 
@@ -30,10 +30,10 @@ categories: productivity
 
 ```bash
 #!/bin/bash
-afplay /mixkit-bike-magical-bell-591.wav
+afplay /path/to/your/wavfile.wav
 ```
 
-3. 예정된 시간에 스크립트 실행하기
+3.예정된 시간에 스크립트 실행하기
 
 예정된 시간에 스크립트를 실행하기 위해서는 macos의 crontab을 사용해야한다.
 사용법이 그리 어렵지 않다.
