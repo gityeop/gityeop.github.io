@@ -48,9 +48,9 @@ afplay /path/to/your/wavfile.wav
    > 2. i 눌러서 INSERT 모드 진입
    >   <img width="592" alt="스크린샷 2024-07-25 00 47 16" src="https://github.com/user-attachments/assets/4f72707a-77d2-4b72-9295-98c2db1c4077">
    > 3. 아래의 "0 9-23 ..." 스크립트 cmd+v로 붙여넣기
-     > ```
-     > 0 9-23 * * * /path/to/your/script.sh
-     > ```
+```
+0 9-23 * * * /path/to/your/script.sh
+```
    > 4. esc(INSERT 모드 나오기)
    > 5. :wq 입력 후 엔터
 
