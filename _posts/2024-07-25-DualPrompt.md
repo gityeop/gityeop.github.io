@@ -1,5 +1,5 @@
 ---
-title: 역할을 나눠서 해보자고 DualPrompt: Complementary Prompting for Rehearsal-free Continual Learning (ECCV 2022)
+title: 역할을 나눠서 해보자고 DualPrompt (ECCV 2022)
 date: 2024-07-25
 categories: machine-learning
 ---
