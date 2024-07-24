@@ -24,7 +24,8 @@ categories: productivity
 
 .sh 확장명으로 파일을 만들어준다. 나는 "play_chime.sh"으로 만들었다.
 
-![Image](https://i.imgur.com/0vqGBIO.png)
+![화면 기록 2024-07-25 00 13 50](https://github.com/user-attachments/assets/ce87d77e-f163-436d-9a5f-72e27eccbc7b)
+
 다운 받은 파일을 오른쪽 클릭하고 옵션 키를 눌러서 **경로 이름**을 복사해두고, play_chime.sh 파일을 열고 아래의 스크립트를 작성해서 afplay 옆에 붙여넣기 해준다.
 
 ```bash
@@ -43,9 +44,9 @@ afplay /mixkit-bike-magical-bell-591.wav
    > vim에 익숙하지 않다면 순서대로 진행한다.
    >
    > 1. crontab -e 엔터
-   >    ![Image](https://i.imgur.com/SjSCjSs.png)
+   >    <img width="592" alt="스크린샷 2024-07-25 00 47 03" src="https://github.com/user-attachments/assets/7ef6d520-9c88-4e82-ac39-0381e427e33a">
    > 2. i 눌러서 INSERT 모드 진입
-   >    ![Image](https://i.imgur.com/iJfO5t1.png)
+   >   <img width="592" alt="스크린샷 2024-07-25 00 47 16" src="https://github.com/user-attachments/assets/4f72707a-77d2-4b72-9295-98c2db1c4077">
    > 3. 아래의 "0 9-23 ..." 스크립트 cmd+v로 붙여넣기
    > 4. esc(INSERT 모드 나오기)
    > 5. :wq 입력 후 엔터
