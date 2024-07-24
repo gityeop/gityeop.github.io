@@ -44,4 +44,4 @@ categories: machine-learning
 - RNN은 1,000배 이상의 혹은 10,000배 이상의 데이터 세트를 처리함
 - 이는 1,000 or 10,000 신경망 레이어
 
-- 이에 대한 솔루션 : <span class="blindfold">gru(greater recurrent unit)</span>
+- 이에 대한 솔루션 : <span class="blindfold">gru(gated recurrent unit)</span>
