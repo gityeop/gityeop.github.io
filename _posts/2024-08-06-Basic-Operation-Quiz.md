@@ -12,19 +12,67 @@ categories: machine-learning
 
 1. 두 텐서 `a`와 `b`를 디멘전 제로 방향으로 연결하는 코드를 작성하세요.
 
-<span class="blindfold" data-hint="">a = torch.tensor([[1,2], [3, 4]])
+a = <span class="blindfold" data-hint="">torch.tensor([[1, 2], [3, 4]])</span>
 
-b = torch.tensor([[5, 6], [7, 8]])
+b = <span class="blindfold" data-hint="">torch.tensor([[5, 6], [7, 8]])</span>
 
-result = torch.cat((a, b), dim = 0 )
-</span>
+result = <span class="blindfold" data-hint="">torch.cat((a, b), dim = 0)</span>
 
-2. 동일한 두 텐서를 디멘전 원 방향으로 연결하려고 할 때 발생하는 오류의 원인을 설명하고, 이 오류를 해결하는 코드를 작성하세요.
+`print(result)`
+
+```python
+# 출력:
+# tensor([[1, 2],
+#         [3, 4],
+#         [5, 6],
+#         [7, 8]])
+```
+
+2. 동일한 두 tensor를 dimension 1 방향으로 연결하려고 할 때 발생하는 오류의 원인을 설명하고, 이 오류를 해결하는 코드를 작성하세요.
+
+```python
+a = torch.tensor([[1, 2], [3, 4]])
+b = torch.tensor([[5, 6]])
+
+result = torch.cat((a, b), dim = 1)
+
+# RuntimeError: Sizes of tensors must match except in dimension 1. Got 2 and 1 in dimension 0
+
+b = <span class="blindfold" data-hint="">torch.tensor([[5], [6]])</span>
+result = torch.cat((a, b) dim = 1)
+
+# 출력:
+# tensor([[1, 2, 5],
+#         [3, 4, 6]])
+
+```
 
 **문제 2: 텐서 확장**
 
 1. 1행 3열의 텐서 `f`를 4행 3열로 확장하는 코드를 작성하세요.
 2. `repeat` 메소드를 사용하여 2행 2열의 텐서 `h`를 디멘전 0방향으로 2번, 디멘전 1방향으로 3번 반복하는 코드를 작성하세요.
+
+```python
+# 1행 3열의 텐서 f를 4행 3열로 확장
+f = torch.tensor([[1, 2, 3]])
+f_expanded = <span class="blindfold" data-hint="">f.expand(4, 3)</span>
+print(f_expanded)
+# 출력:
+# tensor([[1, 2, 3],
+#         [1, 2, 3],
+#         [1, 2, 3],
+#         [1, 2, 3]])
+
+# 리핏 메소드를 사용하여 2행 2열의 텐서 h를 디멘전 0방향으로 2번, 디멘전 1방향으로 3번 반복
+h = torch.tensor([[1, 2], [3, 4]])
+h_repeated = h.repeat(2, 3)
+print(h_repeated)
+# 출력:
+# tensor([[1, 2, 1, 2, 1, 2],
+#         [3, 4, 3, 4, 3, 4],
+#         [1, 2, 1, 2, 1, 2],
+#         [3, 4, 3, 4, 3, 4]])
+```
 
 #### 중급 응용 문제
 
