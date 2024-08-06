@@ -78,7 +78,7 @@ torch.stack([red, green, blue], dim=2)
 
 1. 연속적 범위: 0~255
 2. 강제적: 12 = 0 0 0 0 1 1 0 0
-3. 예: dtype = `torch.<span class="blindfold" data-hint="">uint8</span>`, a = `torch.tensor([1], dtype=torch.uint8)`
+3. 예: dtype = torch.<span class="blindfold" data-hint="">uint8</span>, a = `torch.tensor([1], dtype=torch.uint8)`
 
 ### 부호 O, 8비트
 
@@ -91,7 +91,7 @@ torch.stack([red, green, blue], dim=2)
 ### 부호 O, 16비트
 
 1. -32,768 ~ 32,767
-2. dtype = `torch.int16` 또는 `torch.<span class="blindfold" data-hint="">short</span>`
+2. dtype = `torch.int16` 또는 torch.<span class="blindfold" data-hint="">short</span>
 
 ### 부호 O, 32비트
 
@@ -100,7 +100,7 @@ torch.stack([red, green, blue], dim=2)
 
 ### 부호 O, 64비트
 
-1. dtype = `torch.int64` 또는 `torch.<span class="blindfold" data-hint="">long</span>`
+1. dtype = torch.int64 또는 torch.<span class="blindfold" data-hint="">long</span>
 
 > 2의 보수 표현법
 >
@@ -145,7 +145,7 @@ Q. 102.005는 어떻게 저장해야 할까?
 ### 64비트 부동소수점 수
 
 - 1비트 부호, 11비트 지수부, 52비트 가수부
-- dtype = `torch.float64` 또는 `torch.<span class="blindfold" data-hint="">double</span>`
+- dtype = torch.float64 또는 torch.<span class="blindfold" data-hint="">double</span>
 
 ---
 
@@ -272,9 +272,10 @@ d_contiguous = d.<span class="blindfold" data-hint="">contiguous</span>() # 연�
   x = torch.squeeze(w) # tensor(4)
   x = torch.squeeze(w, dim = 0) # tensor[(1, 4)]
   t = torch.randn(1, 2, 3, 1)
-  t_squeezed = torch.squeeze(t)  # tensor[<span class="blindfold" data-hint="">(2, 3)</span>]
-
+  t_squeezed = torch.squeeze(t)
   ```
+
+  > tensor[<span class="blindfold" data-hint="">(2, 3)</span>]
 
 ### unsqueeze()
 
@@ -283,21 +284,30 @@ d_contiguous = d.<span class="blindfold" data-hint="">contiguous</span>() # 연�
   ```python
   y = torch.rand(3, 4)
   z = torch.unsqueeze(y, dim=0)  # torch.Size([1, 3, 4])
-  z = torch.unsqueeze(y, dim=2)  # torch.Size(<span class="blindfold" data-hint="">[3, 4, 1]</span>)
-
+  z = torch.unsqueeze(y, dim=2)
   ```
+
+  torch.Size(<span class="blindfold" data-hint="">[3, 4, 1]</span>)
 
 ### stack()
 
 - Tensor들의 결합
+
   ```python
   r = torch.tensor([[255, 0], [0, 255]])
   g = torch.tensor([[0, 255], [0, 255]])
   b = torch.tensor([[0, 0], [255, 0]])
-  a = torch.stack((r, g, b)) # tensor.size[<span class="blindfold" data-hint="">(3, 2, 2)</span>]
-  a = torch.stack((r, g, b), dim = 1) # tensor.size[<span class="blindfold" data-hint="">(2, 3, 2)</span>]
-  a = torch.stack((r, g, b), dim = 2) # tensor.size[<span class="blindfold" data-hint="">(2, 2, 3)</span>]
+  a = torch.stack((r, g, b))
+  a = torch.stack((r, g, b), dim = 1)
+  a = torch.stack((r, g, b), dim = 2)
   ```
+
+  tensor.size[<span class="blindfold" data-hint="">(3, 2, 2)</span>]
+
+  tensor.size[<span class="blindfold" data-hint="">(2, 3, 2)</span>]
+
+  tensor.size[<span class="blindfold" data-hint="">(2, 2, 3)</span>]
+
   ![Image](https://i.imgur.com/NBmPhmf.png)
 
 ---
