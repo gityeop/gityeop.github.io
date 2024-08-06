@@ -30,7 +30,9 @@ categories: machine-learning
 - 코드
 
 ```python
+{% raw %}
 a = <span class="blindfold" data-hint="">torch.tensor</span>(365)
+{% endraw %}
 ```
 
 ## 2.1 1-D Tensor: Vector
