@@ -35,15 +35,3 @@ https://docs.google.com/presentation/d/1rmxwWa9P6_xHqonmh5ONXRS-jPc5XKbnv99Rjkhe
 {% if site.head_scripts %} {% for script in site.head_scripts %}
 <script src="{{ script | relative_url }}"></script>
 {% endfor %} {% endif %}
-
-<!-- _includes/head.html 파일에 추가 -->
-<script>
-  document.addEventListener("DOMContentLoaded", function () {
-    const elements = document.querySelectorAll("span.blindfold");
-    elements.forEach((el) => {
-      const code = el.innerText;
-      el.innerText = "";
-      el.dataset.hint = code;
-    });
-  });
-</script>
