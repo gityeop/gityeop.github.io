@@ -29,11 +29,7 @@ categories: machine-learning
 - 대수적: a = a1, a ∈ ℝ
 - 코드
 
-```python
-{% raw %}
 a = <span class="blindfold" data-hint="">torch.tensor</span>(365)
-{% endraw %}
-```
 
 ## 2.1 1-D Tensor: Vector
 
@@ -159,9 +155,13 @@ Q. 102.005는 어떻게 저장해야 할까?
 
 ```python
 i = torch.tensor([2, 3, 4], dtype=torch.int8)
-j = i.float() # <span class="blindfold" data-hint="">32</span>비트 부동소수점으로 타입 캐스팅
-k = i.double() # <span class="blindfold" data-hint="">64</span>비트 부동소수점으로 타입 캐스팅
+j = i.float()
+k = i.double()
 ```
+
+j: <span class="blindfold" data-hint="">32</span>비트 부동소수점으로 타입 캐스팅
+
+k: <span class="blindfold" data-hint="">64</span>비트 부동소수점으로 타입 캐스팅
 
 ## Tensor 기본 함수 및 메서드
 
@@ -189,16 +189,16 @@ k = i.double() # <span class="blindfold" data-hint="">64</span>비트 부동소�
 - 예:
   ```python
   a = torch.tensor([10, 20, 30, 40, 50, 60])
-  a[0]  # <span class="blindfold" data-hint="">10</span>
-  a[3]  # <span class="blindfold" data-hint="">40</span>
+  a[0]  # 10
+  a[3]  # 40
   ```
 
 ### 2-D Tensor의 indexing 예제
 
 ```python
 b = torch.tensor([[10, 20, 30], [40, 50, 60]])
-b[0, 0]  # <span class="blindfold" data-hint="">tensor(10)</span>
-b[1, 2], b[1, -1]  # <span class="blindfold" data-hint="">tensor(60)</span>
+b[0, 0]  # tensor(10)
+b[1, 2], b[1, -1]  # tensor(60)
 ```
 
 ### 2-D Tensor의 slicing 예제
@@ -233,9 +233,9 @@ a[:5:2] # tensor([10, 30, 50])
 ```python
 d.is_contiguous()
 # False
-d_contiguous = d.<span class="blindfold" data-hint="">contiguous</span>() # 연속적으로 할당 가능
-
 ```
+
+d_contiguous = d.<span class="blindfold" data-hint="">contiguous</span>() # 연속적으로 할당 가능
 
 ---
 
