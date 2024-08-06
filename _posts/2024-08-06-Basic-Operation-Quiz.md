@@ -128,11 +128,10 @@ D = torch.tensor([5, 6])
 result = C + D
 print(result)
 # 출력:
+# tensor([[6,  8],
+#        [ 8, 10]])
+# 설명: 1차원 텐서 D가 자동으로 확장되어 2차원 텐서 C와 연산됩니다.
 ```
-
-<span class="blindfold" data-hint="">tensor([[6,  8],</span>
-<span class="blindfold" data-hint="">        [ 8, 10]])</span>
-설명: 1차원 텐서 D가 자동으로 확장되어 2차원 텐서 C와 연산됩니다.
 
 **문제 4: 텐서 비교 연산**
 
