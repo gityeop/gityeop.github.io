@@ -18,7 +18,7 @@ $$
 
 경사하강법(gradient descent): 미분값을 빼서 함수의 <span class="blindfold" data-hint="">극소값</span>의 위치를 구할 때 사용한다.
 
-경사상승법(gradient ascent): 미분값을 더해서 함수의 <span class="blindfold" data-hint="">극소값</span>의 위치를 구할 때 사용한다.
+경사상승법(gradient ascent): 미분값을 더해서 함수의 <span class="blindfold" data-hint="">극대값</span>의 위치를 구할 때 사용한다.
 
 - 경사상승법/경사하강법은 극값에 도달하면 움직임을 멈춘다.
 
