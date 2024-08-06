@@ -13,8 +13,10 @@ categories: machine-learning
 1. 두 텐서 `a`와 `b`를 디멘전 제로 방향으로 연결하는 코드를 작성하세요.
 
 <span class="blindfold" data-hint="">a = torch.tensor([[1,2], [3, 4]])
+
 b = torch.tensor([[5, 6], [7, 8]])
-result = torch.cat((a, b), dim = 0)
+
+result = torch.cat((a, b), dim = 0 )
 </span>
 
 2. 동일한 두 텐서를 디멘전 원 방향으로 연결하려고 할 때 발생하는 오류의 원인을 설명하고, 이 오류를 해결하는 코드를 작성하세요.

@@ -10,7 +10,7 @@ Mac에는 다양한 window management tool이 있다. rectangle, magnet, 그리�
 
 Yabai는 macOS에서 사용할 수 있는 타일링 윈도우 매니저로, i3와 같은 타일링 윈도우 매니저에서 영감을 받아 개발되었다. Yabai를 사용하면 창을 자동으로 타일 형식으로 배치할 수 있으며, 키보드 단축키와 마우스 제스처를 통해 창을 자유롭게 이동하고 크기를 조정할 수 있다. 이를 통해 화면 공간을 효율적으로 활용할 수 있다.
 
-Skhd는 macOS에서 사용할 수 있는 강력한 단축키 데몬으로, Yabai와 함께 사용하면 더욱 강력한 창 관리 환경을 구축할 수 있다. Skhd는 사용자가 정의한 단축키를 통해 Yabai의 기능을 손쉽게 사용할 수 있도록 해준준. 이를 통해 창 관리뿐만 아니라 다양한 작업을 빠르게 수행할 수 있다.
+Skhd는 macOS에서 사용할 수 있는 강력한 단축키 데몬으로f, Yabai와 함께 사용하면 더욱 강력한 창 관리 환경을 구축할 수 있다. Skhd는 사용자가 정의한 단축키를 통해 Yabai의 기능을 손쉽게 사용할 수 있도록 해준준. 이를 통해 창 관리뿐만 아니라 다양한 작업을 빠르게 수행할 수 있다.
 
 ### yabai 설치
 
@@ -29,7 +29,9 @@ yabai --start-service
 ```zsh
 yabai --stop-service
 ```
+
 ### 그외 yabai 커맨드
+
 ```zsh
 yabai [--load-sa|--uninstall-sa|--install-service|--uninstall-service|--start-service|--restart-service|--stop-service|--message,-m msg|--config,-c config_file|--verbose,-V|--version,-v|--help,-h]
 ```
@@ -56,6 +58,7 @@ open ~/.config/yabai
 ```zsh
 yabai -m query <COMMAND> [<PROPERTIES>] [<ARGUMENT>]
 ```
+
 [yabai documentation](https://github.com/koekeishiya/yabai/blob/master/doc/yabai.asciidoc)
 
 1. yabai: Yabai 프로그램을 실행하는 기본 명령어입니다.
