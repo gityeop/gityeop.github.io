@@ -113,6 +113,18 @@ document.addEventListener("DOMContentLoaded", function () {
 
 
     </script>
+    <script>
+    document.addEventListener("DOMContentLoaded", function() {
+        document.querySelectorAll('pre code').forEach((block) => {
+            block.innerHTML = block.innerHTML.replace(
+                /&lt;span class="blindfold" data-hint="([^"]+)"&gt;([^&lt;]+)&lt;\/span&gt;/g,
+                function(match, p1, p2) {
+                    return '<span class="blindfold" data-hint="' + p1 + '">' + p2 + '</span>';
+                }
+            );
+        });
+    });
+    </script>
     {% include scripts.html %}
   </body>
 </html>
