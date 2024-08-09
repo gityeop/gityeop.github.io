@@ -19,7 +19,7 @@ categories: machine-learning
 
 1. 처음에는 그냥 주르륵 받아적었다.
 
-   <img src="https://i.imgur.com/xCpx74z.png" alt="Sample Image" width="300">
+   <img src="https://i.imgur.com/xCpx74z.png" alt="Sample Image" style="border: 1px solid black;" width="300">
 
    잘 보지도 않고 본다고 해도 앞서 말했던 문제가 발생한다.
 
@@ -27,7 +27,7 @@ categories: machine-learning
 
 2. 두번째 필기 해둔 것을 구멍을 뚫어놨다.
 
-   <img src="https://i.imgur.com/T4eBJM2.png" alt="Sample Image" width="300">
+   <img src="https://i.imgur.com/T4eBJM2.png" alt="Sample Image" style="border: 1px solid black;" width="300">
 
    뚫어둔 구멍에 커서를 올리면 정답이 뜨게 만들어놨다.
 
@@ -37,7 +37,7 @@ categories: machine-learning
 
 3. 현재 시도하고 있는 방식.
 
-   <img src="https://i.imgur.com/5bJiolp.png" alt="Sample Image" width="300">
+   <img src="https://i.imgur.com/5bJiolp.png" alt="Sample Image" style="border: 1px solid black;" width="300">
 
    아예 필기를 없애고 문제와 답을 올리는 것.
 
