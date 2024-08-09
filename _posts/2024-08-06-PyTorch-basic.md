@@ -11,6 +11,8 @@ categories: machine-learning
 
 ### PyTorch Architecture
 
+![Image](https://i.imgur.com/2sAM6Yy.png)
+
 - users -> Top-level API (torch, torch.autograd(자동미분), torch.nn(layer, loss), torch.multiprocessing(병렬 처리), torch.utils(데이터로딩, 모델 저장))
 - Python API
   - Autograd C++, ATen C++, JIT (Just in Time 동적 컴파일러)
