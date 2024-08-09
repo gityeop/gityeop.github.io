@@ -14,77 +14,73 @@ categories: machine-learning
    - 목표 변수
    - 손실 함수
 
-<div class="answer">
-  <button class="toggle-answer">답안 보기/숨기기</button>
-  <div class="answer-content" style="display: none;">
-    <strong>답안:</strong>
-    <p>
-    - **선형 회귀:** 주어진 데이터를 사용하여 특징 변수와 목표 변수 사이의 선형 관계를 분석하고, 이 관계를 기반으로 새로운 데이터의 결과를 예측하는 통계 기법입니다.<br>
-    - **훈련 데이터:** 모델을 학습시키기 위해 사용되는 데이터로, 모델이 특징 변수와 목표 변수 간의 관계를 학습하는 데 사용됩니다.<br>
-    - **특징 변수:** 입력 데이터로, 예측 모델에 제공되는 독립 변수입니다.<br>
-    - **목표 변수:** 출력 데이터로, 모델이 예측하려는 종속 변수입니다.<br>
-    - **손실 함수:** 모델의 예측 값과 실제 값 간의 차이를 측정하는 함수로, 모델을 최적화하는 데 사용됩니다.
-    </p>
-  </div>
-</div>
+   <div class="answer">
+   <button class="toggle-answer">답안 보기/숨기기</button>
+   <div class="answer-content" style="display: none;">
+      <strong>답안:</strong>
+      <p>
+      - <strong>선형 회귀:</strong> 주어진 데이터를 사용하여 특징 변수와 목표 변수 사이의 선형 관계를 분석하고, 이 관계를 기반으로 새로운 데이터의 결과를 예측하는 통계 기법입니다.<br>
+      - <strong>훈련 데이터:</strong> 모델을 학습시키기 위해 사용되는 데이터로, 모델이 특징 변수와 목표 변수 간의 관계를 학습하는 데 사용됩니다.<br>
+      - <strong>특징 변수:</strong> 입력 데이터로, 예측 모델에 제공되는 독립 변수입니다.<br>
+      - <strong>목표 변수:</strong> 출력 데이터로, 모델이 예측하려는 종속 변수입니다.<br>
+      - <strong>손실 함수:</strong> 모델의 예측 값과 실제 값 간의 차이를 측정하는 함수로, 모델을 최적화하는 데 사용됩니다.
+      </p>
+   </div>
+   </div>
 
 2. **Kaggle에서 급여 데이터를 다운로드하고 분석을 위해 준비하는 과정을 설명하세요.**
 
-<div class="answer">
-  <button class="toggle-answer">답안 보기/숨기기</button>
-  <div class="answer-content" style="display: none;">
-    <strong>답안:</strong>
-    <p>
-    Kaggle API를 사용하여 급여 데이터를 다운로드하고, 압축을 해제한 후 Pandas 라이브러리를 사용하여 CSV 파일을 DataFrame으로 로드합니다. 이 데이터에서 특징 변수와 목표 변수를 분리하여 분석을 준비합니다.
-    </p>
-  </div>
-</div>
-
-### 응용
+   <div class="answer">
+   <button class="toggle-answer">답안 보기/숨기기</button>
+   <div class="answer-content" style="display: none;">
+      <strong>답안:</strong>
+      <p>
+      Kaggle API를 사용하여 급여 데이터를 다운로드하고, 압축을 해제한 후 Pandas 라이브러리를 사용하여 CSV 파일을 DataFrame으로 로드합니다. 이 데이터에서 특징 변수와 목표 변수를 분리하여 분석을 준비합니다.
+      </p>
+   </div>
+   </div>
 
 3. **경험 연수와 해당 급여의 데이터셋이 주어졌을 때, 이 데이터를 Pandas DataFrame에 로드하는 Python 함수를 작성하세요.**
 
-<div class="language-python highlighter-rouge">
-  <div class="highlight">
-        <pre class="highlight"><code>
-import pandas as pd
+   <div class="language-python highlighter-rouge">
+   <div class="highlight">
+         <pre class="highlight"><code>
+   import pandas as pd
 
-def load_data(filepath):
-data = pd.read_csv(filepath)
-return data
-</code>
+   def load_data(filepath):
+   data = pd.read_csv(filepath)
+   return data
+   </code>
 
-</pre> 
-  </div> 
-</div>
+   </pre> 
+   </div> 
+   </div>
 
 4. **로드된 데이터를 특징 변수(경험 연수)와 목표 변수(급여)로 분할하는 Python 함수를 작성하세요.**
 
-<div class="language-python highlighter-rouge">
-  <div class="highlight">
-        <pre class="highlight"><code>
-def split_data(data):
-    X = data.iloc[:, 0].values  # 특징 변수 (경험 연수)
-    y = data.iloc[:, 1].values  # 목표 변수 (급여)
-    return X, y
-</code>
-</pre> 
-  </div> 
-</div>
-
-### 분석
+   <div class="language-python highlighter-rouge">
+   <div class="highlight">
+         <pre class="highlight"><code>
+   def split_data(data):
+      X = data.iloc[:, 0].values  # 특징 변수 (경험 연수)
+      y = data.iloc[:, 1].values  # 목표 변수 (급여)
+      return X, y
+   </code>
+   </pre> 
+   </div> 
+   </div>
 
 5. **경험 연수와 급여 간의 상관 관계를 결정하는 데 있어서 상관 계수의 중요성을 분석하세요. 상관 계수 0.9782는 이 맥락에서 무엇을 의미하나요?**
 
-<div class="answer">
-  <button class="toggle-answer">답안 보기/숨기기</button>
-  <div class="answer-content" style="display: none;">
-    <strong>답안:</strong>
-    <p>
-    상관 계수는 두 변수 간의 선형 관계의 강도를 나타냅니다. 상관 계수 0.9782는 경험 연수와 급여 간에 매우 강한 양의 선형 관계가 있음을 의미합니다. 이는 경험 연수가 증가할수록 급여도 증가하는 경향이 강하다는 것을 나타냅니다.
-    </p>
-  </div>
-</div>
+   <div class="answer">
+   <button class="toggle-answer">답안 보기/숨기기</button>
+   <div class="answer-content" style="display: none;">
+      <strong>답안:</strong>
+      <p>
+      상관 계수는 두 변수 간의 선형 관계의 강도를 나타냅니다. 상관 계수 0.9782는 경험 연수와 급여 간에 매우 강한 양의 선형 관계가 있음을 의미합니다. 이는 경험 연수가 증가할수록 급여도 증가하는 경향이 강하다는 것을 나타냅니다.
+      </p>
+   </div>
+   </div>
 
 6. **강의 노트에 설명된 PyTorch를 사용하여 선형 회귀 모델을 구축하는 단계를 분석하세요.**
 
