@@ -21,6 +21,29 @@
   });
 </script>
 <style>
+  .answer {
+  margin-top: 20px;
+}
+
+.toggle-answer {
+  background-color: #007bff;
+  color: white;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.toggle-answer:focus {
+  outline: none;
+}
+
+.answer-content {
+  margin-top: 10px;
+  border: 1px solid #ddd;
+  padding: 10px;
+  border-radius: 5px;
+}
 .blindfold {
     color: transparent;
     position: relative;
@@ -110,7 +133,22 @@ document.addEventListener("DOMContentLoaded", function () {
         element.setAttribute('data-original-hint', element.getAttribute('data-hint'));
     });
 });
+document.addEventListener('DOMContentLoaded', function() {
+  var toggleButtons = document.querySelectorAll('.toggle-answer');
 
+  toggleButtons.forEach(function(button) {
+    button.addEventListener('click', function() {
+      var answerContent = this.nextElementSibling;
+      if (answerContent.style.display === 'none' || answerContent.style.display === '') {
+        answerContent.style.display = 'block';
+        this.textContent = '답안 숨기기';
+      } else {
+        answerContent.style.display = 'none';
+        this.textContent = '답안 보기';
+      }
+    });
+  });
+});
 
     </script>
     {% include scripts.html %}

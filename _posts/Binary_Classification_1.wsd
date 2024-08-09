@@ -1,0 +1,61 @@
+@startuml
+actor User
+participant "Kaggle API" as KaggleAPI
+participant "Pandas" as Pandas
+participant "Scikit-learn" as Sklearn
+participant "PyTorch" as Torch
+
+User -> KaggleAPI: Download dataset
+activate KaggleAPI
+KaggleAPI --> User: iris.zip
+deactivate KaggleAPI
+
+User -> User: Unzip iris.zip
+
+User -> Pandas: Read CSV "Iris.csv"
+activate Pandas
+Pandas --> User: DataFrame (df)
+deactivate Pandas
+
+User -> Pandas: Filter DataFrame by Species
+activate Pandas
+Pandas --> User: Filtered DataFrame (filtered_df)
+deactivate Pandas
+
+User -> Pandas: Map Species to binary labels
+activate Pandas
+Pandas --> User: Updated DataFrame (filtered_df)
+deactivate Pandas
+
+User -> Pandas: Extract features and target
+activate Pandas
+Pandas --> User: x, t
+deactivate Pandas
+
+User -> Sklearn: Split data into train/test
+activate Sklearn
+Sklearn --> User: x_train, x_test, t_train, t_test
+deactivate Sklearn
+
+User -> Sklearn: Standardize data
+activate Sklearn
+Sklearn -> Sklearn: fit_transform(x_train)
+Sklearn -> Sklearn: transform(x_test)
+Sklearn --> User: x_train (scaled), x_test (scaled)
+deactivate Sklearn
+
+User -> Torch: Convert to tensors
+activate Torch
+Torch --> User: x_train (tensor), x_test (tensor), t_train (tensor), t_test (tensor)
+deactivate Torch
+
+User -> Torch: Define IrisDataset class
+User -> Torch: Define DataLoader for train/test
+Torch --> User: train_loader, test_loader
+
+User -> Torch: Define BinaryClassificationModel class
+User -> Torch: Initialize model
+Torch --> User: model instance
+
+User -> Torch: Train the model
+@enduml
