@@ -128,32 +128,30 @@ categories: machine-learning
     </div>
     </div>
 
-### 선택형 질문
+8.  **선형 회귀 모델의 주요 목적은 무엇인가요?**
 
-9. **선형 회귀 모델의 주요 목적은 무엇인가요?**
+    - A. 데이터를 다른 카테고리로 분류하는 것
+    - B. 데이터 포인트에 가장 적합한 곡선을 찾는 것
+    - C. 데이터 포인트에 가장 적합한 직선을 찾는 것
+    - D. 데이터 포인트를 유사성에 따라 클러스터링하는 것
 
-   - A. 데이터를 다른 카테고리로 분류하는 것
-   - B. 데이터 포인트에 가장 적합한 곡선을 찾는 것
-   - C. 데이터 포인트에 가장 적합한 직선을 찾는 것
-   - D. 데이터 포인트를 유사성에 따라 클러스터링하는 것
+    <div class="answer">
+    <button class="toggle-answer">답안 보기/숨기기</button>
+    <div class="answer-content" style="display: none;">
+       <strong>답안:</strong>
+       <p>
+       - **정답:** C. 데이터 포인트에 가장 적합한 직선을 찾는 것<br>
+       - **정답 이유:** 선형 회귀 모델은 주어진 데이터에서 독립 변수와 종속 변수 사이의 관계를 설명하는 최적의 직선을 찾는 것을 목적으로 합니다.
+       </p>
+    </div>
+    </div>
 
-   <div class="answer">
-   <button class="toggle-answer">답안 보기/숨기기</button>
-   <div class="answer-content" style="display: none;">
-      <strong>답안:</strong>
-      <p>
-      - **정답:** C. 데이터 포인트에 가장 적합한 직선을 찾는 것<br>
-      - **정답 이유:** 선형 회귀 모델은 주어진 데이터에서 독립 변수와 종속 변수 사이의 관계를 설명하는 최적의 직선을 찾는 것을 목적으로 합니다.
-      </p>
-   </div>
-   </div>
+9.  **다음 중 평균 제곱 오차(MSE) 손실 함수의 특성이 아닌 것은?**
 
-10. **다음 중 평균 제곱 오차(MSE) 손실 함수의 특성이 아닌 것은?**
-
-    - A. 오차의 제곱의 평균을 측정한다.
-    - B. 선형 회귀 모델을 최적화하는 데 사용될 수 있다.
-    - C. 예측 값과 실제 값 간의 절대 차이를 계산한다.
-    - D. 예측 오차를 최소화하는 직선을 찾는 데 도움을 준다.
+- A. 오차의 제곱의 평균을 측정한다.
+- B. 선형 회귀 모델을 최적화하는 데 사용될 수 있다.
+- C. 예측 값과 실제 값 간의 절대 차이를 계산한다.
+- D. 예측 오차를 최소화하는 직선을 찾는 데 도움을 준다.
 
    <div class="answer">
    <button class="toggle-answer">답안 보기/숨기기</button>
@@ -168,10 +166,10 @@ categories: machine-learning
 
 11. **다음 코드는 무엇을 하나요? `pd.read_csv('salary_dataset.csv', sep=',', header=0)`**
 
-- A. 첫 번째 행을 데이터로 사용하여 CSV 파일을 DataFrame으로 읽어들인다.
-- B. 첫 번째 행을 열 이름으로 사용하여 CSV 파일을 DataFrame으로 읽어들인다.
-- C. DataFrame의 데이터를 CSV 파일로 작성한다.
-- D. 열 이름을 CSV 파일로 작성한다.
+    - A. 첫 번째 행을 데이터로 사용하여 CSV 파일을 DataFrame으로 읽어들인다.
+    - B. 첫 번째 행을 열 이름으로 사용하여 CSV 파일을 DataFrame으로 읽어들인다.
+    - C. DataFrame의 데이터를 CSV 파일로 작성한다.
+    - D. 열 이름을 CSV 파일로 작성한다.
 
    <div class="answer">
    <button class="toggle-answer">답안 보기/숨기기</button>
@@ -196,7 +194,7 @@ categories: machine-learning
    </div>
    </div>
 
-15. **선형 회귀 모델을 학습할 때 손실 함수를 최소화하는 과정의 의미와 중요성을 설명하세요. 이 과정이 모델의 예측 정확도와 신뢰성에 어떻게 기여하는지 논의하세요.**
+13. **선형 회귀 모델을 학습할 때 손실 함수를 최소화하는 과정의 의미와 중요성을 설명하세요. 이 과정이 모델의 예측 정확도와 신뢰성에 어떻게 기여하는지 논의하세요.**
 
    <div class="answer">
    <button class="toggle-answer">답안 보기/숨기기</button>
