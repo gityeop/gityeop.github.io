@@ -1,0 +1,22 @@
+@startuml
+actor DataEngineer as DE
+actor DataScientist as DS
+actor MLEngineerDeveloper as ML
+
+DE -> DS: Provide Labeled Data
+activate DS
+
+DS -> DS: Use Training Code
+DS -> DS: Create Model
+
+DS -> ML: Deliver Model
+deactivate DS
+activate ML
+
+ML -> ML: Use Web App Code
+ML -> ML: Deploy Model
+
+ML -> Product: Deliver Product
+deactivate ML
+
+@enduml

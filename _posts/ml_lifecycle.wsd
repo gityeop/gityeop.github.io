@@ -1,0 +1,42 @@
+@startuml
+actor User
+
+User -> DefineTask: Define Task
+activate DefineTask
+
+DefineTask -> CollectData: Collect Data
+activate CollectData
+
+CollectData -> ModelExploration: Model Exploration
+activate ModelExploration
+ModelExploration -> CollectData: Collect Data
+activate CollectData
+
+CollectData -> ModelRefinement: Model Refinement
+activate ModelRefinement
+ModelRefinement -> CollectData: Collect Data
+activate CollectData
+
+CollectData -> TestingAndEvaluation: Testing and Evaluation
+activate TestingAndEvaluation
+
+TestingAndEvaluation -> DeploymentAndIntegration: Deployment and Integration
+activate DeploymentAndIntegration
+
+DeploymentAndIntegration -> MonitorAndMaintain: Monitor and Maintain
+activate MonitorAndMaintain
+
+MonitorAndMaintain -> DefineTask: Define Task
+activate DefineTask
+
+deactivate DefineTask
+deactivate MonitorAndMaintain
+deactivate DeploymentAndIntegration
+deactivate TestingAndEvaluation
+deactivate ModelRefinement
+deactivate CollectData
+deactivate ModelExploration
+deactivate CollectData
+deactivate DefineTask
+
+@enduml
