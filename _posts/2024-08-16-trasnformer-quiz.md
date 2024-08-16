@@ -60,7 +60,7 @@ GRU가 LSTM보다 간단한 구조를 가지는 이유는 무엇인가? GRU의 �
     <button class="toggle-answer">답안 보기</button>
     <div class="answer-content" style="display: none;">
        <strong>답안:</strong>
-       GRU는 LSTM에 비해 구조가 간단한 이유는 <strong>셀 상태 $ C_t $</strong>와 <strong>은닉 상태 \( h_t \)</strong>를 통합하여 하나의 상태 \( h_t \)만을 사용하기 때문이다. 
+       GRU는 LSTM에 비해 구조가 간단한 이유는 <strong>셀 상태 $ C_t $</strong>와 <strong>은닉 상태 \( h_t \)</strong>를 통합하여 하나의 상태 \( h_t \)만을 사용하기 때문이다. <br>
       
       •	<strong>LSTM</strong>: 셀 상태와 은닉 상태를 각각 업데이트한다.
         \[
@@ -68,7 +68,7 @@ GRU가 LSTM보다 간단한 구조를 가지는 이유는 무엇인가? GRU의 �
         \]
         \[
         h_t = o_t \odot \tanh(C_t)
-        \]
+        \] <br>
       
       •	<strong>GRU</strong>: 셀 상태 없이 은닉 상태 \( h_t \)만으로 정보를 처리한다.
         \[
@@ -125,9 +125,9 @@ Transformer는 RNN이나 LSTM과 달리 시퀀스의 순서 정보를 자연스�
     <button class="toggle-answer">답안 보기</button>
     <div class="answer-content" style="display: none;">
       <strong>답안:</strong>
-      <strong>포지셔널 인코딩(Positional Encoding)</strong>이다. 이는 시퀀스 내에서 각 단어의 위치 정보를 벡터로 인코딩하여 Transformer가 위치 정보를 학습할 수 있게 한다.
+      <strong>포지셔널 인코딩(Positional Encoding)</strong>이다. 이는 시퀀스 내에서 각 단어의 위치 정보를 벡터로 인코딩하여 Transformer가 위치 정보를 학습할 수 있게 한다.<br>
         
-        •	기존 임베딩 벡터:  $\mathbf{E}$ = [0.5, 0.3, 0.8] 
+        •	기존 임베딩 벡터:  $\mathbf{E}$ = [0.5, 0.3, 0.8] <br>
         
         •	포지셔널 인코딩 벡터:  $\mathbf{PE}$ = [0.1, 0.2, 0.05]
 
