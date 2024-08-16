@@ -1,3 +1,89 @@
+### 퀴즈 1:
+
+Linear Classifier에서 매개변수적 접근의 장점 중 하나는 무엇인가요?
+
+<div class="answer">
+    <button class="toggle-answer">답안 보기</button>
+    <div class="answer-content" style="display: none;">
+       <strong>답안:</strong>
+       학습이 완료되면 가중치 W만을 필요로 하여 공간 효율성이 높고, 모든 훈련 데이터와 비교하는 것보다 훨씬 빠릅니다.
+    </div>
+</div>
+
+### 퀴즈 2:
+
+바이어스(Bias)는 딥러닝 모델에서 어떤 역할을 하나요?
+
+<div class="answer">
+    <button class="toggle-answer">답안 보기</button>
+    <div class="answer-content" style="display: none;">
+       <strong>답안:</strong>
+       바이어스는 모델의 출력값을 조정하여 입력 데이터가 없거나 모든 입력이 0일 때에도 출력값이 완전히 0이 되지 않도록 합니다.
+    </div>
+</div>
+
+### 퀴즈 3:
+
+웨이트 파라미터의 시각화는 무엇을 의미하나요?
+
+<div class="answer">
+    <button class="toggle-answer">답안 보기</button>
+    <div class="answer-content" style="display: none;">
+       <strong>답안:</strong>
+       웨이트 파라미터의 시각화는 모델이 각 클래스(예: 말, 자동차 등)를 분류할 때 어떤 특징에 반응하는지를 그림으로 표현하는 것입니다.
+    </div>
+</div>
+
+### 퀴즈 4:
+
+kNN과 Linear Classifier의 주요 차이점은 무엇인가요?
+
+<div class="answer">
+    <button class="toggle-answer">답안 보기</button>
+    <div class="answer-content" style="display: none;">
+       <strong>답안:</strong>
+       kNN은 N개의 훈련 예제와 비교하는 반면, Linear Classifier는 K개의 클래스만 비교합니다 (K << N).
+    </div>
+</div>
+
+### 퀴즈 5:
+
+Softmax Classifier에서 Sigmoid 함수의 역할은 무엇인가요?
+
+<div class="answer">
+    <button class="toggle-answer">답안 보기</button>
+    <div class="answer-content" style="display: none;">
+       <strong>답안:</strong>
+       Sigmoid 함수는 입력값을 0과 1 사이의 값으로 변환하여 확률로 해석할 수 있게 합니다.
+    </div>
+</div>
+
+### 퀴즈 6:
+
+Softmax 함수의 수치적 안정성을 확보하기 위한 방법은 무엇인가요?
+
+<div class="answer">
+    <button class="toggle-answer">답안 보기</button>
+    <div class="answer-content" style="display: none;">
+       <strong>답안:</strong>
+       입력 값의 최대값을 계산하여 모든 입력 값에서 빼는 방법을 사용하여 오버플로우 문제를 해결할 수 있습니다.
+    </div>
+</div>
+
+### 퀴즈 7:
+
+마진 기반 손실 함수 중 Hinge 손실의 특징은 무엇인가요?
+
+<div class="answer">
+    <button class="toggle-answer">답안 보기</button>
+    <div class="answer-content" style="display: none;">
+       <strong>답안:</strong>
+       Hinge 손실은 미분이 상수이기 때문에 계산이 더 효율적입니다.
+    </div>
+</div>
+
+---
+
 ## Linear Classifier
 
 1. 매개변수적 접근
