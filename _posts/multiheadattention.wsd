@@ -1,0 +1,37 @@
+@startuml MultiHeadSelfAttention
+actor Client
+
+Client -> MultiHeadSelfAttention : __init__(num_heads, hidden_size)
+activate MultiHeadSelfAttention
+
+Client -> MultiHeadSelfAttention : forward(hidden_states)
+activate MultiHeadSelfAttention
+
+MultiHeadSelfAttention -> MultiHeadSelfAttention : Q = nn.Linear(hidden_size, head_size)
+MultiHeadSelfAttention -> MultiHeadSelfAttention : K = nn.Linear(hidden_size, head_size)
+MultiHeadSelfAttention -> MultiHeadSelfAttention : V = nn.Linear(hidden_size, head_size)
+
+MultiHeadSelfAttention -> MultiHeadSelfAttention : tp_attn(Q)
+activate MultiHeadSelfAttention
+MultiHeadSelfAttention -> MultiHeadSelfAttention : reshape(Q) to (batch_size, num_heads, seq_length, attn_head_size)
+deactivate MultiHeadSelfAttention
+
+MultiHeadSelfAttention -> MultiHeadSelfAttention : tp_attn(K)
+activate MultiHeadSelfAttention
+MultiHeadSelfAttention -> MultiHeadSelfAttention : reshape(K) to (batch_size, num_heads, seq_length, attn_head_size)
+deactivate MultiHeadSelfAttention
+
+MultiHeadSelfAttention -> MultiHeadSelfAttention : tp_attn(V)
+activate MultiHeadSelfAttention
+MultiHeadSelfAttention -> MultiHeadSelfAttention : reshape(V) to (batch_size, num_heads, seq_length, attn_head_size)
+deactivate MultiHeadSelfAttention
+
+MultiHeadSelfAttention -> MultiHeadSelfAttention : compute attn = (Q * K^T) / sqrt(attn_head_size)
+MultiHeadSelfAttention -> MultiHeadSelfAttention : attn = softmax(attn)
+MultiHeadSelfAttention -> MultiHeadSelfAttention : output = attn * V
+MultiHeadSelfAttention -> MultiHeadSelfAttention : output = permute & reshape output to (batch_size, seq_length, head_size)
+
+MultiHeadSelfAttention -> MultiHeadSelfAttention : Z = dense(output)
+
+deactivate MultiHeadSelfAttention
+@enduml

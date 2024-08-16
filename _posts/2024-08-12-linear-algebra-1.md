@@ -1,5 +1,65 @@
 ## 선형대수-1(Regression & NN Classifier)
 
+### 퀴즈 1:
+
+회귀 분석에서 독립 변수와 종속 변수의 역할을 설명하세요.
+
+<div class="answer">
+    <button class="toggle-answer">답안 보기</button>
+    <div class="answer-content" style="display: none;">
+       <strong>답안:</strong>
+       독립 변수는 결과의 원인으로 작용하며, 종속 변수는 독립 변수에 따라 값이 달라지는 변수입니다.
+    </div>
+</div>
+
+### 퀴즈 2:
+
+선형 회귀의 기본 가정 중 "선형성"의 의미는 무엇인가요?
+
+<div class="answer">
+    <button class="toggle-answer">답안 보기</button>
+    <div class="answer-content" style="display: none;">
+       <strong>답안:</strong>
+       종속 변수와 독립 변수 간의 관계가 선형적이어야 한다는 의미입니다.
+    </div>
+</div>
+
+### 퀴즈 3:
+
+L1 거리와 L2 거리의 차이점을 설명하세요.
+
+<div class="answer">
+    <button class="toggle-answer">답안 보기</button>
+    <div class="answer-content" style="display: none;">
+       <strong>답안:</strong>
+       L1 거리는 절대적 차이를 합산한 것이며, L2 거리는 차이의 크기를 제곱한 후 합산한 것입니다.
+    </div>
+</div>
+
+### 퀴즈 4:
+
+k-Nearest Neighbor 알고리즘의 주요 문제점 중 하나는 무엇인가요?
+
+<div class="answer">
+    <button class="toggle-answer">답안 보기</button>
+    <div class="answer-content" style="display: none;">
+       <strong>답안:</strong>
+       고차원 데이터에서 예제 수가 기하급수적으로 증가하여 발생하는 "Curse of Dimensionality"입니다.
+    </div>
+</div>
+
+### 퀴즈 5:
+
+최소 제곱법(OLS)의 목표는 무엇인가요?
+
+<div class="answer">
+    <button class="toggle-answer">답안 보기</button>
+    <div class="answer-content" style="display: none;">
+       <strong>답안:</strong>
+       실제 값과 예측 값의 차이의 제곱합을 최소화하는 매개변수 m과 b를 추정하는 것입니다.
+    </div>
+</div>
+
 Regression이란?
 회귀 : 과거의 상태로 돌아가는 것
 부모와 자녀의 키 사이에 선형적 관계가 있고, 키가 커지거나 작아지는 것보다는 전체 키 평균(부모의 키 평균)으로 **돌아가려는 경향**이 있다는 가설을 세움
