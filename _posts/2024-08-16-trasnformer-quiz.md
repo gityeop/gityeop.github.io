@@ -131,7 +131,7 @@ Transformer는 RNN이나 LSTM과 달리 시퀀스의 순서 정보를 자연스�
 
         \mathbf{E{\prime}} = \mathbf{E} + \mathbf{PE} = [0.5 + 0.1, 0.3 + 0.2, 0.8 + 0.05] = [0.6, 0.5, 0.85]
 
-    </div>
+  </div>
 
 </div>
 
