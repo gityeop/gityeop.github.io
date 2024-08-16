@@ -124,12 +124,14 @@ Transformer는 RNN이나 LSTM과 달리 시퀀스의 순서 정보를 자연스�
     <div class="answer-content" style="display: none;">
       <strong>답안:</strong>
       <strong>포지셔널 인코딩(Positional Encoding)</strong>이다. 이는 시퀀스 내에서 각 단어의 위치 정보를 벡터로 인코딩하여 Transformer가 위치 정보를 학습할 수 있게 한다.
-        •	기존 임베딩 벡터:  \mathbf{E} = [0.5, 0.3, 0.8] 
-        •	포지셔널 인코딩 벡터:  \mathbf{PE} = [0.1, 0.2, 0.05]
+        •	기존 임베딩 벡터:  $\mathbf{E}$ = [0.5, 0.3, 0.8] 
+        •	포지셔널 인코딩 벡터:  $\mathbf{PE}$ = [0.1, 0.2, 0.05]
 
-        이 두 벡터를 더하면, 새로운 벡터  \mathbf{E{\prime}} 는 다음과 같이 된다:
+        이 두 벡터를 더하면, 새로운 벡터  $\mathbf{E{\prime}} $는 다음과 같이 된다:
 
+        $$
         \mathbf{E{\prime}} = \mathbf{E} + \mathbf{PE} = [0.5 + 0.1, 0.3 + 0.2, 0.8 + 0.05] = [0.6, 0.5, 0.85]
+        $$
 
   </div>
 
