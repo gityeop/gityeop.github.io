@@ -4,7 +4,9 @@ date: 2024-08-22
 categories: machine-learning
 ---
 
-<div style="display: flex; justify-content: center; align-items: center; height: 600px; margin: 0 auto;">
+<section class="page__content" itemprop="text">
+  <div id="phaser-container" style="display: flex; justify-content: center; align-items: center; height: 600px; margin: 0 auto;">
+
     <script src="https://cdn.jsdelivr.net/npm/phaser@3.55.2/dist/phaser.js"></script>
     <script>
       const config = {
@@ -153,4 +155,5 @@ categories: machine-learning
       }
 
   </script>
-</dib>
+  </div>
+</section>
