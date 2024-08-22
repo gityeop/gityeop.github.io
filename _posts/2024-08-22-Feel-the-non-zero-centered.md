@@ -7,23 +7,6 @@ categories: machine-learning
 <div id="game-container">
   <!-- HTML 요소들 -->
   <canvas id="gameCanvas">
-  
-
-
-<style>
-      body {
-        margin: 0;
-        padding: 0;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        height: 100vh;
-        background-color: #fff;
-      }
-      canvas {
-        display: block;
-      }
-</style>
 
 <script src="https://cdn.jsdelivr.net/npm/phaser@3.55.2/dist/phaser.js"></script>
 
