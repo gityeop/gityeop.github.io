@@ -19,7 +19,6 @@ categories: machine-learning
           update: update,
         },
       scale: {
-        mode: Phaser.Scale.FIT, // 화면에 맞게 맞춤
       }
       };
 
