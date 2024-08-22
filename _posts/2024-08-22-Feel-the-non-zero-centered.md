@@ -4,6 +4,8 @@ date: 2024-08-22
 categories: machine-learning
 ---
 
+{% raw %}
+
 <div id="game-container">
   <!-- HTML 요소들 -->
   <canvas id="gameCanvas"></canvas>
@@ -173,3 +175,4 @@ categories: machine-learning
       }
 
   </script>
+{% endraw %}
