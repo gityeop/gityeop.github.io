@@ -5,21 +5,18 @@ categories: machine-learning
 ---
 
 <div>
-    <script src="https://cdn.jsdelivr.net/npm/phaser@3.55.2/dist/phaser.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/phaser@3.55.2/dist/phaser.js"></script>
     <script>
       const config = {
         type: Phaser.AUTO,
-        width: 600, // 너비 조정
-        height: 400, // 높이 조정
+        width: 600,
+        height: 400,
         backgroundColor: "#ffffff",
-        parent: 'page__content',
         scene: {
           preload: preload,
           create: create,
           update: update,
         },
-      scale: {
-      }
       };
 
       const startPos = { x: 50, y: 50 };
