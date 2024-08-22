@@ -4,9 +4,29 @@ date: 2024-08-22
 categories: machine-learning
 ---
 
-<div>
-<script src="https://cdn.jsdelivr.net/npm/phaser@3.55.2/dist/phaser.js"></script>
-
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Non zero-centered problem</title>
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        background-color: #fff;
+      }
+      canvas {
+        display: block;
+      }
+    </style>
+  </head>
+  <body>
+    <script src="https://cdn.jsdelivr.net/npm/phaser@3.55.2/dist/phaser.js"></script>
     <script>
       const config = {
         type: Phaser.AUTO,
@@ -152,7 +172,7 @@ categories: machine-learning
           }
         }
       }
+    </script>
 
-  </script>
-</div>
-</body>
+  </body>
+</html>
