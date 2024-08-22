@@ -20,6 +20,10 @@ categories: machine-learning
           create: create,
           update: update,
         },
+      scale: {
+        mode: Phaser.Scale.FIT, // 화면에 맞게 맞춤
+        autoCenter: Phaser.Scale.CENTER_BOTH, // 화면 중앙에 맞춤
+      }
       };
 
       const startPos = { x: 50, y: 50 };
