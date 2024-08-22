@@ -9,8 +9,8 @@ categories: machine-learning
     <script>
       const config = {
         type: Phaser.AUTO,
-        width: 700, // 너비 조정
-        height: 500, // 높이 조정
+        width: 600, // 너비 조정
+        height: 400, // 높이 조정
         backgroundColor: "#ffffff",
         parent: 'phaser-container',
         scene: {
@@ -20,7 +20,6 @@ categories: machine-learning
         },
       scale: {
         mode: Phaser.Scale.FIT, // 화면에 맞게 맞춤
-        autoCenter: Phaser.Scale.CENTER_BOTH, // 화면 중앙에 맞춤
       }
       };
 
