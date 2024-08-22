@@ -6,7 +6,9 @@ categories: machine-learning
 
 <div id="game-container">
   <!-- HTML 요소들 -->
-  <canvas id="gameCanvas"></canvas>
+  <canvas id="gameCanvas">
+  
+
 
 <style>
       body {
@@ -172,5 +174,5 @@ categories: machine-learning
       }
 
   </script>
-
+</canvas>
 </div>
