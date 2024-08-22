@@ -4,10 +4,6 @@ date: 2024-08-22
 categories: machine-learning
 ---
 
-<div id="game-container">
-  <!-- HTML 요소들 -->
-  <canvas id="gameCanvas">
-
 <script src="https://cdn.jsdelivr.net/npm/phaser@3.55.2/dist/phaser.js"></script>
 
     <script>
@@ -157,5 +153,3 @@ categories: machine-learning
       }
 
   </script>
-</canvas>
-</div>
