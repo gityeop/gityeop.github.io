@@ -9,8 +9,8 @@ categories: machine-learning
     <script>
       const config = {
         type: Phaser.AUTO,
-        width: 600, // 너비 조정
-        height: 400, // 높이 조정
+        width: 700, // 너비 조정
+        height: 500, // 높이 조정
         backgroundColor: "#ffffff",
         parent: 'phaser-container',
         scene: {
