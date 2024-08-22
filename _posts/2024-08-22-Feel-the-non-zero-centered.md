@@ -12,7 +12,7 @@ categories: machine-learning
         width: 600, // 너비 조정
         height: 400, // 높이 조정
         backgroundColor: "#ffffff",
-        parent: 'phaser-container',
+        parent: 'page__content',
         scene: {
           preload: preload,
           create: create,
