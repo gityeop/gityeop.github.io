@@ -1,4 +1,8 @@
-타이타닉 데이터 분석 코드에서 사용된 함수와 메서드에 대해 더 자세히 정리하고, 추가적으로 관련된 유용한 메서드도 포함해 설명드리겠습니다.
+---
+title: Functions and methods utilized in EDA
+date: 2024-08-30
+categories: machine-learning
+---
 
 ### 데이터 불러오기 및 확인
 

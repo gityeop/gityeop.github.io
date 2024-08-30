@@ -1,3 +1,9 @@
+---
+title: Word Embedding
+date: 2024-08-30
+categories: machine-learning
+---
+
 ## One-Hot Encoding의 의미
 
 One-Hot Encoding을 한다는 것은 서로 다른 단어들의 내적 유사도(Dot-product similarity)를 0으로 만들고
@@ -82,4 +88,3 @@ Word2Vec의 두 가지 예측 Task
   - math **shopping** reading science
   - rain snow sleet **sun**
   - eight six seven five three **owe** nine
--
