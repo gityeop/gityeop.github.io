@@ -205,3 +205,63 @@ Set the environment variable HYDRA_FULL_ERROR=1 for a complete stack trace.
 ```
 
 - 각자의 코드에 맞게 모델의 토크나이저도 동시에 업데이트 해준다.
+
+---
+
+## transformers 의존성 문제
+
+### 원래 코드
+
+from transformers import (
+AutoConfig,
+AutoModelForQuestionAnswering,
+AutoTokenizer
+)
+
+### 오류 메시지
+
+---
+
+ImportError Traceback (most recent call last)
+<ipython-input-25-c42bfb97b9b8> in <cell line: 1>()
+----> 1 from transformers import (
+2 AutoConfig,
+3 AutoModelForQuestionAnswering,
+4 AutoTokenizer
+5 )
+
+2 frames
+/usr/local/lib/python3.10/dist-packages/transformers/utils/**init**.py in <module>
+16 # limitations under the License.
+17
+---> 18 from huggingface_hub import get_full_repo_name # for backward compatibility
+19 from huggingface_hub.constants import HF_HUB_DISABLE_TELEMETRY as DISABLE_TELEMETRY # for backward compatibility
+20 from packaging import version
+
+## ImportError: cannot import name 'get_full_repo_name' from 'huggingface_hub' (/usr/local/lib/python3.10/dist-packages/huggingface_hub/**init**.py)
+
+ImportError Traceback (most recent call last)
+<ipython-input-24-8bdb762f89ec> in <cell line: 1>()
+----> 1 from datasets import list_metrics
+2 from datasets import load_metrics
+3 list_metrics()
+4 metric = load_metrics('squad')
+
+ImportError: cannot import name 'list_metrics' from 'datasets' (/usr/local/lib/python3.10/dist-packages/datasets/**init**.py)
+
+---
+
+NOTE: If your import is failing due to a missing package, you can
+manually install dependencies using either !pip or !apt.
+
+To view examples of installing some common dependencies, click the
+"Open Examples" button below.
+
+---
+
+### 해결책
+
+```
+!pip uninstall -y datasets transformers pyarrow tokenizers
+!pip install datasets==2.15.0 transformers==4.25.1 pyarrow==14.0.1
+```
