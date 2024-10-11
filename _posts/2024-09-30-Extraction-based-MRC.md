@@ -54,9 +54,10 @@ Extraction-based MRC와 거의 동일
 - autoregressive: 이전 스텝에 나온 출력이 다음 스텝의 입력으로 들어감
 
 ---
+
 ```python
 metric = load_metric('squad')
-```
+
 
 Args:
   - predictions: List of question-answers dictionaries with the following key-values:
@@ -81,12 +82,13 @@ Examples:
     >>> results = squad_metric.compute(predictions=predictions, references=references)
     >>> print(results)
     {'exact_match': 100.0, 'f1': 100.0}
+```
 
 ```python
 model_name = "bert-base-multilingual-cased"
 model = AutoModelForQuestionAnswering.from_pretrained(model_name, config=config)
 model
-```
+
 BertForQuestionAnswering(
   (bert): BertModel(
     (embeddings): BertEmbeddings(
@@ -127,3 +129,4 @@ BertForQuestionAnswering(
   )
   (qa_outputs): Linear(in_features=768, out_features=2, bias=True)
 )
+```
