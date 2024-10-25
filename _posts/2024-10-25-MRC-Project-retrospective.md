@@ -72,10 +72,10 @@ LoRA의 그래프엔 감동이 있다.
 
 disk_manager
 
-![Image](https://i.imgur.com/sVl7ql8.png)
+<blockquote class="imgur-embed-pub" lang="en" data-id="9S8nPyu"><a href="//imgur.com/9S8nPyu"></a></blockquote><script async src="//s.imgur.com/min/embed.js" charset="utf-8"></script>
 
 commitizen
 
-![Image](https://i.imgur.com/KqKyoKz.png)
+<blockquote class="imgur-embed-pub" lang="en" data-id="1K6Hb1g"><a href="//imgur.com/1K6Hb1g"></a></blockquote><script async src="//s.imgur.com/min/embed.js" charset="utf-8"></script>
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/Vk2dixY2C6w?si=l7JUvF0xJspP74Gv" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
