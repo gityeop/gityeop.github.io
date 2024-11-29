@@ -1,84 +1,43 @@
 ---
 layout: default
 title: Tags
+author_profile: true
 ---
 
-<div id="main" role="main">
-    {% include sidebar.html %}
-    
-    <div class="tag-list">
-      <h1>Tags</h1>
-      {% capture site_tags %}{% for tag in site.tags %}{{ tag | first }}{% unless forloop.last %},{% endunless %}{% endfor %}{% endcapture %}
-      {% assign tags_list = site_tags | split:',' | sort %}
+{% if page.header.overlay_color or page.header.overlay_image or page.header.image %}
+  {% include page__hero.html %}
+{% elsif page.header.video.id and page.header.video.provider %}
+  {% include page__hero_video.html %}
+{% endif %}
 
+<div id="main" role="main">
+  {% include sidebar.html %}
+
+  <div class="archive">
+    <h1 class="page__title">{{ page.title }}</h1>
+    
+    {% capture site_tags %}{% for tag in site.tags %}{{ tag | first }}{% unless forloop.last %},{% endunless %}{% endfor %}{% endcapture %}
+    {% assign tags_list = site_tags | split:',' | sort %}
+
+    <div class="entries-{{ entries_layout | default: 'list' }}">
       {% for item in (0..site.tags.size) %}{% unless forloop.last %}
         {% capture this_tag %}{{ tags_list[item] | strip_newlines }}{% endcapture %}
         <div class="tag-group">
-          <h2 id="{{ this_tag }}" class="tag-group-title">{{ this_tag }}</h2>
+          <h2 id="{{ this_tag }}" class="archive__subtitle">{{ this_tag }}</h2>
           {% for post in site.tags[this_tag] %}
-          <div class="tag-item">
-            <span class="tag-item-date">{{ post.date | date: "%Y-%m-%d" }}</span>
-            <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
-          </div>
+            <div class="list__item">
+              <article class="archive__item">
+                <h3 class="archive__item-title no_toc">
+                  <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
+                </h3>
+                <p class="archive__item-excerpt">
+                  <time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: "%Y-%m-%d" }}</time>
+                </p>
+              </article>
+            </div>
           {% endfor %}
         </div>
       {% endunless %}{% endfor %}
     </div>
+  </div>
 </div>
-
-<style>
-.wrapper {
-  display: flex;
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 20px;
-}
-
-.content-area {
-  display: flex;
-  width: 100%;
-}
-
-.tag-list {
-  flex: 1;
-  margin-left: 20px;
-  padding: 0 20px;
-}
-
-.tag-list h1 {
-  margin-bottom: 30px;
-  color: #333;
-}
-
-.tag-group {
-  margin-bottom: 30px;
-}
-
-.tag-group-title {
-  color: #333;
-  font-size: 1.3em;
-  margin-bottom: 15px;
-  padding-bottom: 5px;
-  border-bottom: 2px solid #eee;
-}
-
-.tag-item {
-  margin: 10px 0;
-  line-height: 1.6;
-}
-
-.tag-item-date {
-  color: #666;
-  font-size: 0.9em;
-  margin-right: 10px;
-}
-
-.tag-item a {
-  color: #333;
-  text-decoration: none;
-}
-
-.tag-item a:hover {
-  color: #007bff;
-}
-</style>
