@@ -18,14 +18,24 @@ main:
         url: /github-blog/
       - title: "생산성"
         url: /productivity/
-# main:
-#   - title: "Quick-Start Guide"
-#     url: https://mmistakes.github.io/minimal-mistakes/docs/quick-start-guide/
-#   - title: "About"
-#     url: https://mmistakes.github.io/minimal-mistakes/about/
-#   - title: "Sample Posts"
-#     url: /year-archive/
-#   - title: "Sample Collections"
-#     url: /collection-archive/
-#   - title: "Sitemap"
-#     url: /sitemap/
+
+# sidebar navigation
+categories:
+  - title: Programming
+    children:
+      - title: "Data Structure and Algorithm" 
+        url: /datastructure-and-algorithm/
+      - title: "Python 기본 문법"
+        url: /python-basic/
+  - title: AI
+    children:
+      - title: "Machine Learning"
+        url: /machine-learning/
+      - title: "인공지능을 위한 수학"
+        url: /math-for-ml/
+  - title: 기타
+    children:
+      - title: "Github Blog"
+        url: /github-blog/
+      - title: "생산성"
+        url: /productivity/
