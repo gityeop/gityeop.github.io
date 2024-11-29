@@ -1,0 +1,48 @@
+---
+layout: page
+title: Tags
+---
+
+{% capture site_tags %}{% for tag in site.tags %}{{ tag | first }}{% unless forloop.last %},{% endunless %}{% endfor %}{% endcapture %}
+{% assign tags_list = site_tags | split:',' | sort %}
+
+<div class="tag-list">
+  {% for item in (0..site.tags.size) %}{% unless forloop.last %}
+    {% capture this_tag %}{{ tags_list[item] | strip_newlines }}{% endcapture %}
+    <div class="tag-group">
+      <h2 id="{{ this_tag }}" class="tag-group-title">{{ this_tag }}</h2>
+      {% for post in site.tags[this_tag] %}
+      <div class="tag-item">
+        <span class="tag-item-date">{{ post.date | date: "%Y-%m-%d" }}</span>
+        <a href="{{ post.url }}">{{ post.title }}</a>
+      </div>
+      {% endfor %}
+    </div>
+  {% endunless %}{% endfor %}
+</div>
+
+<style>
+.tag-list {
+  margin: 2em 0;
+}
+
+.tag-group {
+  margin-bottom: 2em;
+}
+
+.tag-group-title {
+  color: #333;
+  font-size: 1.5em;
+  margin-bottom: 1em;
+}
+
+.tag-item {
+  margin: 0.5em 0;
+}
+
+.tag-item-date {
+  color: #666;
+  font-size: 0.9em;
+  margin-right: 1em;
+}
+</style>
