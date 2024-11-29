@@ -2,24 +2,45 @@
 layout: default
 ---
 
-<div class="tag-posts">
-  <h1>Posts tagged with "{{ page.tag }}"</h1>
-  
-  {% for post in site.tags[page.tag] %}
-    <article class="tag-post">
-      <h2><a href="{{ post.url | relative_url }}">{{ post.title }}</a></h2>
-      <time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: "%B %d, %Y" }}</time>
-      {% if post.description %}
-        <p>{{ post.description }}</p>
-      {% endif %}
-    </article>
-  {% endfor %}
+<div class="wrapper">
+  <div class="content-wrapper">
+    <div class="tag-posts">
+      <h1>Posts tagged with "{{ page.tag }}"</h1>
+      
+      {% for post in site.tags[page.tag] %}
+        <article class="tag-post">
+          <h2><a href="{{ post.url | relative_url }}">{{ post.title }}</a></h2>
+          <time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: "%B %d, %Y" }}</time>
+          {% if post.description %}
+            <p>{{ post.description }}</p>
+          {% endif %}
+        </article>
+      {% endfor %}
+    </div>
+  </div>
+
+  {% if page.sidebar %}
+    <div class="sidebar sticky">
+      {% include sidebar.html %}
+    </div>
+  {% endif %}
 </div>
 
 <style>
+.wrapper {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto;
+  max-width: 1200px;
+}
+
+.content-wrapper {
+  flex: 1;
+  margin-right: 30px;
+}
+
 .tag-posts {
   max-width: 800px;
-  margin: 0 auto;
   padding: 20px;
 }
 
@@ -41,5 +62,24 @@ layout: default
 .tag-post p {
   margin-top: 10px;
   color: #444;
+}
+
+.sidebar {
+  width: 300px;
+}
+
+@media screen and (max-width: 768px) {
+  .wrapper {
+    flex-direction: column;
+  }
+  
+  .content-wrapper {
+    margin-right: 0;
+  }
+  
+  .sidebar {
+    width: 100%;
+    margin-top: 30px;
+  }
 }
 </style>
