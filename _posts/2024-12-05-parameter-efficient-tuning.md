@@ -8,10 +8,10 @@ tags:
 
 PEFT는 모델의 모든 파라미터를 학습하지 않고, **일부만 효율적으로 학습**하여 자원과 시간을 절약하면서도 높은 성능을 유지할 수 있는 방법론이다. 
 
-![2024-12-06-17-22-11.png](/assets/images/2024-12-06-17-22-11.png)
+![PEFT Overview]({{ site.baseurl }}/assets/images/2024-12-06-17-22-11.png)
 
 ### 1. 어댑터 튜닝(Adapter Tuning)
-![2024-12-06-17-58-38.png](/assets/images/2024-12-06-17-58-38.png)
+![Adapter Tuning]({{ site.baseurl }}/assets/images/2024-12-06-17-58-38.png)
 
 어댑터 튜닝은 트랜스포머 모델의 일부(멀티헤드 어텐션Multi-Head Attention과 피드포드 네트워크FeedForward-Network) 사이에 새로운 "어댑터 레이어"를 추가하는 방식이다. 기존 모델은 고정하고, 어댑터 레이어만 학습하여 자원을 절약다.  
 
@@ -30,7 +30,7 @@ model.train_adapter("adapter_name")
 ```
 
 ### 2. 프리픽스 튜닝(Prefix Tuning)
-![2024-12-06-17-21-26.png](/assets/images/2024-12-06-17-21-26.png)
+![Prefix Tuning]({{ site.baseurl }}/assets/images/2024-12-06-17-21-26.png)
 
 프리픽스 튜닝은 트랜스포머 각 레이어에 "프리픽스 벡터"를 추가한다. 기존 모델은 그대로 두고, 프리픽스만 학습한다.  
 
@@ -56,7 +56,7 @@ model.train_adapter("prefix_tuning")
 - **특징**: 프리픽스 수(`num_virtual_tokens`)는 테스크 복잡도에 따라 조정.
 
 ### 3. 프롬프트 튜닝(Prompt Tuning)
-![2024-12-06-17-21-43.png](/assets/images/2024-12-06-17-21-43.png)
+![Prompt Tuning]({{ site.baseurl }}/assets/images/2024-12-06-17-21-43.png)
 
 프롬프트 튜닝은 입력 문장 앞에 "훈련 가능한 프롬프트 벡터"를 추가하는 방식이다.  
 
@@ -77,7 +77,7 @@ model.train_adapter("prompt_tuning")
 - **조정할 값**: `num_virtual_tokens`는 프롬프트 길이를 결정.
 
 ### 4. 로우 랭크 어댑터(Low-Rank Adapter, LoRA)
-![2024-12-06-17-21-56.png](/assets/images/2024-12-06-17-21-56.png)
+![LoRA]({{ site.baseurl }}/assets/images/2024-12-06-17-21-56.png)
 
 LoRA는 모델 파라미터를 "작은 차원(r)의 행렬"로 나누어 학습하는 방식이다. 기존 파라미터는 고정하고 작은 크기(r)만 학습하여 효율성을 높인다.  
 
