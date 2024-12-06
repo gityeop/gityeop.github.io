@@ -53,15 +53,16 @@ $$
 $$
 
 ##### **수식 요소 설명**
+
 1. **$\pi_\theta(y|x)$**:
    - 모델이 입력 $x$에 대해 응답 $y$를 생성하는 확률을 나타냄.
    - 예: "주식 투자에 대해 알려주세요."라는 질문에 대한 응답 $y$의 확률을 모델이 계산.
 
-2. **$R_\phi(x, y)$**:
+2. $R_\phi(x, y)$:
    - Reward Model이 $x$와 $y$를 평가하여 생성하는 점수(보상).  
    - 높은 점수는 좋은 응답, 낮은 점수는 나쁜 응답을 의미.
 
-3. **$\mathbb{E}_{(x, y) \sim \pi_\theta}$**:
+3. $\mathbb{E}_{(x, y) \sim \pi_\theta}$:
    - 모델이 생성하는 다양한 응답($y$)의 평균 보상을 계산.  
    - 목표는 평균 보상이 가장 높아지도록 모델을 학습시키는 것.
 
@@ -73,21 +74,22 @@ $$
 $$
 
 ##### **수식 요소 설명**
-1. **$r_t(\theta) = \frac{\pi_\theta(y_t|x_t)}{\pi_{\theta_{\text{old}}}(y_t|x_t)}$**:
+
+1. $r_t(\theta) = \frac{\pi_\theta(y_t|x_t)}{\pi_{\theta_{\text{old}}}(y_t|x_t)}$:
    - 새 모델 $\pi_\theta$가 $y_t$라는 응답을 생성할 확률을 이전 모델 $\pi_{\theta_{\text{old}}}$와 비교한 비율.
    - **설명**: 새롭게 학습된 모델이 기존 모델과 얼마나 달라졌는지를 나타냄.
 
-2. **$\hat{A}_t$**:
+2. $\hat{A}_t$:
    - Advantage Estimate로, 특정 응답 $y_t$가 얼마나 좋은지를 나타냄.
    - 계산 방식: $R_\phi(x_t, y_t) - \text{baseline}$ (즉, 보상에서 기준값을 뺀 값).
    - **설명**: "이 응답이 얼마나 더 유용한가?"를 수치로 나타냄.
 
-3. **$\text{clip}(r_t(\theta), 1-\epsilon, 1+\epsilon)$**:
+3. $\text{clip}(r_t(\theta), 1-\epsilon, 1+\epsilon)$:
    - $r_t(\theta)$의 값이 1에 가까워지도록 제한하여 모델의 업데이트가 너무 급격히 변하지 않도록 조정.
    - $\epsilon$은 허용 범위(일반적으로 작은 값, 예: 0.2).
    - **설명**: 새 모델과 기존 모델 간 차이가 너무 크면 학습을 제한해 안정성을 유지.
 
-4. **$\min \left( r_t(\theta) \hat{A}_t, \text{clip}(r_t(\theta), 1-\epsilon, 1+\epsilon) \hat{A}_t \right)$**:
+4. $\min \left( r_t(\theta) \hat{A}_t, \text{clip}(r_t(\theta), 1-\epsilon, 1+\epsilon) \hat{A}_t \right)$:
    - 학습 손실을 계산할 때, $r_t(\theta)$와 $\text{clip}(r_t(\theta))$ 중 더 작은 값을 선택하여 업데이트.
    - **설명**: 안정성과 성능 향상을 동시에 추구하는 방식.
 
