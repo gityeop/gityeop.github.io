@@ -27,7 +27,15 @@
         <h2 class="archive__subtitle">{{ taxonomy[0] }}</h2>
         <div class="entries-{{ entries_layout }}">
           {% for post in taxonomy.last %}
-            {% include archive-single.html type=entries_layout %}
+            <article class="archive__item">
+              <h3 class="archive__item-title no_toc">
+                <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
+              </h3>
+              <p class="page__meta">
+                <i class="far fa-calendar-alt" aria-hidden="true"></i> {{ post.date | date: "%Y-%m-%d" }}
+              </p>
+              {% if post.excerpt %}<p class="archive__item-excerpt">{{ post.excerpt }}</p>{% endif %}
+            </article>
           {% endfor %}
         </div>
         <a href="#page-title" class="back-to-top">{{ site.data.ui-text[site.locale].back_to_top | default: 'Back to Top' }} &uarr;</a>
