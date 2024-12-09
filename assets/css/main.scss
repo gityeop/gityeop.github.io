@@ -48,3 +48,43 @@ search: false
 .search-content__form {
   margin-bottom: 2em;
 }
+
+.search-container {
+  display: flex;
+  align-items: center;
+  margin-left: 1em;
+
+  .search-form {
+    display: flex;
+    align-items: center;
+  }
+
+  .search-input {
+    padding: 0.5em;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    margin-right: 0.5em;
+    font-size: 14px;
+    min-width: 200px;
+  }
+
+  .search-submit {
+    background: none;
+    border: none;
+    color: $primary-color;
+    cursor: pointer;
+    padding: 0.5em;
+    
+    &:hover {
+      color: darken($primary-color, 15%);
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .search-container {
+    .search-input {
+      min-width: 150px;
+    }
+  }
+}

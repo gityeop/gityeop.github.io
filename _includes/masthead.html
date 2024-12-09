@@ -22,12 +22,15 @@
             </li>
           {%- endfor -%}
         </ul>
-        {% if site.search == true %}
-        <button class="search__toggle" type="button">
-          <span class="visually-hidden">{{ site.data.ui-text[site.locale].search_label | default: "Toggle search" }}</span>
-          <i class="fas fa-search"></i>
-        </button>
-        {% endif %}
+        <div class="search-container">
+          <form class="search-form" action="{{ site.baseurl }}/search" method="get">
+            <input type="text" id="search-input" class="search-input" name="q" placeholder="{{ site.data.ui-text[site.locale].search_placeholder_text | default: 'Enter your search term...' }}" />
+            <button type="submit" class="search-submit">
+              <i class="fas fa-search"></i>
+              <span class="visually-hidden">{{ site.data.ui-text[site.locale].search_label | default: "Search" }}</span>
+            </button>
+          </form>
+        </div>
         <button class="greedy-nav__toggle hidden" type="button">
           <span class="visually-hidden">{{ site.data.ui-text[site.locale].menu_label | default: "Toggle menu" }}</span>
           <div class="navicon"></div>
