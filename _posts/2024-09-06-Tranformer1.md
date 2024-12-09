@@ -1,7 +1,7 @@
 ---
-title: "Transformer Architecture"
-excerpt: "트랜스포머 구조 설명"
-tags: ["transformer", "deep-learning"]
+title: "Transformer Part 1"
+excerpt: "트랜스포머 모델 이해하기"
+tags: ["ai/nlp", "ai/deep-learning", "ai/transformer"]
 date: 2024-09-06
 categories: machine-learning
 ---

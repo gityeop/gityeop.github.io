@@ -1,7 +1,7 @@
 ---
 title: "Python Basic Part 2"
 excerpt: "파이썬 기초 2"
-tags: ["python", "programming"]
+tags: ["programming/python", "programming/basics"]
 date: 2024-07-05
 categories: python-basic
 related_posts:

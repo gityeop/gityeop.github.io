@@ -2,7 +2,7 @@
 title: Transformer Quiz
 date: 2024-08-16
 categories: machine-learning
-tags: ["transformer", "deep-learning"]
+tags: ["ai/transformer", "ai/deep-learning"]
 ---
 
 ### 퀴즈 1:

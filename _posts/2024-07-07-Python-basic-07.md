@@ -2,13 +2,14 @@
 title: Pythonic Code
 date: 2024-07-07
 categories: python-basic
+tags: ["programming/python", "programming/basics"]
 ---
 
 ## Overview
 
 - 파이썬 스타일의 코딩 기법
 - 파이썬 특유의 문법을 활용하여 효율적으로 코드를 표현함
-- 고급 코드를 작성 할 수록 더 많이 필요해짐
+- 고급 코드를 작성할 수록 더 많이 필요해짐
 
 ---
 

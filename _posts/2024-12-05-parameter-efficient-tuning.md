@@ -1,9 +1,12 @@
 ---
-title: PEFT(파라미터 효율적 미세 조정) 학습 정리
+title: "Parameter Efficient Fine-tuning"
+excerpt: "파라미터 효율적 미세조정"
 date: 2024-12-06
 categories: machine-learning
 tags:
-  - PEFT
+  - "ai/fine-tuning"
+  - "ai/nlp"
+  - "ai/deep-learning"
 ---
 
 PEFT는 모델의 모든 파라미터를 학습하지 않고, **일부만 효율적으로 학습**하여 자원과 시간을 절약하면서도 높은 성능을 유지할 수 있는 방법론이다. 

@@ -2,6 +2,7 @@
 title: Python Object Oriented Programming
 date: 2024-07-08
 categories: python-basic
+tags: ["programming/python", "programming/basics", "programming/oop"]
 ---
 이 포스트는 [이 사이트](https://www.boostcourse.org/ai100/lecture/739171?isDesc=false)의 동영상 강의를 바탕으로 작성되었습니다. 더 자세한 내용은 해당 강의를 참고하시기 바랍니다.
 

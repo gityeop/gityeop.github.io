@@ -3,7 +3,7 @@ title: 에러 수리 기록
 date: 2024-09-25
 categories: machine_learning
 excerpt: "에러 해결 노트"
-tags: ["debugging", "error-handling"]
+tags: ["programming/debugging"]
 ---
 
 ## 모델은 업데이트 되고 있지만 모델의 토크나이저는 업데이트 되고 있지 않아서 생기는 문제

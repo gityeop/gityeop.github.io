@@ -2,7 +2,7 @@
 title: File / Exception / Log Handling
 date: 2024-07-13
 categories: python-basic
-tags: ["python", "error-handling"]
+tags: ["programming/python", "programming/error-handling"]
 ---
 ## Exception
 

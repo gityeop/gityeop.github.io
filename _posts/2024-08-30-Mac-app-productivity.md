@@ -3,7 +3,7 @@ title: 생산성 Mac app 총정리
 date: 2024-08-30
 categories: productivity
 excerpt: "맥 생산성 앱 추천"
-tags: ["macos", "productivity"]
+tags: ["tools/macos", "tools/productivity"]
 ---
 
 기능이 많을 수록 처음 배울 때 러닝 커브가 있으니 참고

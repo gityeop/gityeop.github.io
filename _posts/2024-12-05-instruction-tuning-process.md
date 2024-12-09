@@ -2,13 +2,7 @@
 title: "LLM의 Instruction Tuning 과정 상세 분석"
 date: 2024-12-05
 categories: machine-learning
-tags: 
-- LLM
-- RLHF
-- AI
-- Machine Learning
-- nlp
-- fine-tuning
+tags: ['ai/llm','ai/fine-tuning']
 ---
 LLM을 더 안전하고 유용하게 만들기 위한 Instruction Tuning 프로세스
 

@@ -2,6 +2,7 @@
 title: Python data structure
 date: 2024-07-07
 categories: python-basic
+tags: ["programming/python", "programming/basics"]
 ---
 
 ## 특징이 있는 정보는 어떻게 저장하면 좋을까?

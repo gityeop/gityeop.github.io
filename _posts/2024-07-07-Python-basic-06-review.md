@@ -1,7 +1,7 @@
 ---
 title: "Python Basic Review Part 6"
 excerpt: "파이썬 기초 리뷰 6"
-tags: ["python", "oop"]
+tags: ["programming/python", "programming/basics", "programming/oop"]
 date: 2024-07-07
 categories: python-basic
 ---

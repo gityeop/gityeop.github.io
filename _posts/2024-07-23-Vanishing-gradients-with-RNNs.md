@@ -1,7 +1,7 @@
 ---
 title: "Vanishing Gradients in RNNs"
 excerpt: "RNN에서의 기울기 소실 문제"
-tags: ["deep-learning", "rnn"]
+tags: ["ai/deep-learning", "ai/rnn", "science/optimization"]
 date: 2024-07-23
 categories: machine-learning
 ---
@@ -26,7 +26,7 @@ categories: machine-learning
 
 신경망이 <span class="blindfold">암기</span>가 필요하다는 것을 인식하도록 하는 것이 어려울 수 있음
 
-- 단수형이면 was, 복수형이면 were이라는 사실을 외워야 한다는 사실
+- 단수형이면 was, 복수형이면 were라는 사실을 외워야 한다는 사실
 - 영어는 삽입되는 관계절이 매우 길 수 있으므로 앞선 정보를 외워야할 수 있음
 
 이 때문에 기본 RNN은 <span class="blindfold">local</span>의 영향을 많이 받는다.

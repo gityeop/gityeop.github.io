@@ -1,7 +1,7 @@
 ---
 title: "Python Basic Part 3"
 excerpt: "파이썬 기초 3"
-tags: ["python", "programming"]
+tags: ["programming/python", "programming/basics"]
 categories: python-basic
 ---
 

@@ -3,7 +3,7 @@ title: "Python Data Handling"
 date: 2024-07-13
 categories: python-basic
 excerpt: "파이썬 데이터 처리"
-tags: ["python", "data-processing"]
+tags: ["ai/data", "programming/python"]
 ---
 
 1. CSV

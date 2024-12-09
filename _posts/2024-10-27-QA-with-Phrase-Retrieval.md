@@ -3,7 +3,7 @@ title: QA with Phrase Retrieval
 date: 2024-10-27
 categories: machine-learning
 excerpt: "구절 검색을 활용한 질의응답"
-tags: ["nlp", "question-answering"]
+tags: ["ai/nlp", "ai/question-answering", "ai/information-retrieval"]
 ---
 
 ### 1. 기존 Retriever-Reader 접근법의 한계

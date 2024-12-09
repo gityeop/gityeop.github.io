@@ -2,6 +2,7 @@
 title: Conditionals and Loops(조건문과 루프)
 date: 2024-07-05
 categories: python-basic
+tags: ['programming/basics', 'programming/python']
 ---
 
 ## 조건문

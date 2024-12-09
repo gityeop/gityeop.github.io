@@ -2,7 +2,7 @@
 title: yabai+skhd 튜토리얼(2024)
 date: 2024-07-20
 categories: productivity
-tags: ["macos", "productivity"]
+tags: ["tools/macos", "tools/productivity"]
 ---
 
 ## yabai+skhd 소개

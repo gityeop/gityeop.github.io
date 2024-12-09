@@ -1,7 +1,7 @@
 ---
 title: "Data Visualization Examples"
 excerpt: "데이터 시각화 예시들"
-tags: ["visualization", "data-analysis"]
+tags: ["ai/data-analysis", "ai/visualization", "tools/matplotlib"]
 ---
 
 ```python
