@@ -1,5 +1,7 @@
 ---
 title: 데이터 분석과 UX, UX와 HCI 퀴즈
+excerpt: 데이터 분석과 UX/HCI 퀴즈
+tags: ["data-analysis", "ux"]
 date: 2024-08-23
 categories: machine-learning
 ---

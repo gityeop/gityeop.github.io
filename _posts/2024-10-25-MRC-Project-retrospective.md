@@ -2,6 +2,8 @@
 title: 네이버 부스트캠프 7기 MRC 프로젝트 개인회고
 date: 2024-10-25
 categories: machine-learning
+excerpt: "MRC 프로젝트 회고"
+tags: ["project", "nlp"]
 ---
 
 [1. 나는 내 학습목표 달성을 위해 무엇을 어떻게 했는가?](#1-나는-내-학습목표-달성을-위해-무엇을-어떻게-했는가)

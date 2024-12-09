@@ -1,5 +1,7 @@
 ---
-title: Python 기본 문법 - Python의 특징(복습용)
+title: "Python Basic Review Part 1"
+excerpt: "파이썬 기초 리뷰 1"
+tags: ["python", "programming", "python-basic-review", "python-study", "programming-language"]
 date: 2024-07-05
 categories: python-basic
 related_posts:

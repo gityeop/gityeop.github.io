@@ -2,6 +2,7 @@
 title: Datacentric-NLP-Wrap-up-Report
 date: 2024-11-08
 categories: machine-learning
+tags: ["nlp", "data-centric"]
 ---
 
 **임상엽**

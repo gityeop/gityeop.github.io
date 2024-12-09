@@ -2,6 +2,7 @@
 title: Python Data Analysis Library - Pandas 1
 date: 2024-07-19
 categories: python-basic
+tags: ["pandas", "data-analysis"]
 ---
 
 - 구조화된 데이터의 처리를 지원하는 Python 라이브러리
@@ -414,4 +415,3 @@ df.corrwith(df.earn)
 
 # 15세 ~ 45세 사이의 나이와 소득관의 상관관계
 df.age(df.age < 45)&(df.age > 15).corr(df.earn)
-```

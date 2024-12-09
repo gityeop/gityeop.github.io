@@ -1,5 +1,7 @@
 ---
-title: PyTorch basic
+title: "PyTorch Basic"
+excerpt: "파이토치 기초"
+tags: ["pytorch", "deep-learning"]
 date: 2024-08-06
 categories: machine-learning
 ---

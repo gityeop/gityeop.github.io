@@ -1,5 +1,7 @@
 ---
-title: Tranformer 1
+title: "Transformer Architecture"
+excerpt: "트랜스포머 구조 설명"
+tags: ["transformer", "deep-learning"]
 date: 2024-09-06
 categories: machine-learning
 ---

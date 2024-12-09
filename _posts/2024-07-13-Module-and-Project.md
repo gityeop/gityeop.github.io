@@ -2,6 +2,7 @@
 title: Module, Package and Project
 date: 2024-07-13
 categories: python-basic
+tags: ["python", "project-structure"]
 ---
 
 # Module & Package 개요
@@ -49,7 +50,7 @@ print("Fahrenheit: ", fahrenheit)
 - 모든 코드가 메모리 로딩되는 것을 방지하기 위해 사용
 - **from**과 **import** 키워드 사용
 
-```pytho됨
+```python
 # Alias 설정
 import fah_converter as fah
 print(fah.convert_c_to_f(41.6)) # convert_c_to_f가 어디에서 왔는지 명확히 알 수 있는 장점
@@ -126,4 +127,3 @@ conda install matplotlib
 conda install tqdm
 
 conda install jupyter
-```

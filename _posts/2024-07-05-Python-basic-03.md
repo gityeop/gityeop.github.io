@@ -1,6 +1,7 @@
 ---
-title: Python 기본 문법 - Function and Console I/O
-date: 2024-07-05
+title: "Python Basic Part 3"
+excerpt: "파이썬 기초 3"
+tags: ["python", "programming"]
 categories: python-basic
 ---
 
@@ -108,4 +109,3 @@ print(f"{name:*<20}) : 왼쪽 정렬에 빈 공간을 *로 채움
 print(f"{name:*>20}) : 오른쪽 정렬에 빈 공간을 *로 채움
 print(f"{name:*^20}) : 가운데 정렬에 빈 공간을 *로 채움
 print(f"{number:.2f}") : 소수점 아래 2자리
-```

@@ -2,6 +2,7 @@
 title: Pandas의 reset_index의 inplace, drop에 대한 설명
 date: 2024-07-29
 categories: python-basic
+tags: ["pandas", "data-analysis"]
 ---
 
 `inplace`[^1]와 `drop`을 조합하여 `reset_index`를 적용하는 4가지 경우에 대해 예시를 통한 설명.

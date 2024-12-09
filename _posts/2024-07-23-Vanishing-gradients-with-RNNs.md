@@ -1,5 +1,7 @@
 ---
-title: Vanishing gradients with RNNs
+title: "Vanishing Gradients in RNNs"
+excerpt: "RNN에서의 기울기 소실 문제"
+tags: ["deep-learning", "rnn"]
 date: 2024-07-23
 categories: machine-learning
 ---

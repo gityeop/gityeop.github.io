@@ -1,6 +1,7 @@
 ---
-title: QuestionAnsweringTrainer 설명
-date: 2024-10-01
+title: "Trainer Q&A"
+excerpt: "트레이너 관련 질문과 답변"
+tags: ["deep-learning", "huggingface"]
 categories: machine-learning
 ---
 

@@ -2,6 +2,7 @@
 title: File / Exception / Log Handling
 date: 2024-07-13
 categories: python-basic
+tags: ["python", "error-handling"]
 ---
 ## Exception
 
@@ -308,7 +309,7 @@ f.close()
 
 - 기록을 print로 남기는 것도 가능함
 - 그러나 Console 창에만 남기는 기록은 분석시 사용 불가
-- 떄로는 레벨 별(개발, 운영)로 기록을 남길 필요도 있음
+- 때로는 레벨 별(개발, 운영)로 기록을 남길 필요도 있음
 - 모듈 별로 logging을 남길 필요도 있음
 - 이러한 기능을 체계적으로 지원하는 모듈이 필요함
 
@@ -445,4 +446,3 @@ formatter = logging.Formatter('%(asctime)s %(levelname)s %(process)d %(message)s
 ```python
 logging.config.fileConfig('logging.conf')
 logger = logging.getLogger()
-```

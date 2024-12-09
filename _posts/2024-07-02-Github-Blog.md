@@ -2,6 +2,8 @@
 title: Github Blog 만들기(2024)
 date: 2024-07-02
 categories: github-blog
+excerpt: "깃허브 블로그 설정하기"
+tags: ["github", "jekyll"]
 ---
 
 

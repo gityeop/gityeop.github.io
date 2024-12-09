@@ -2,6 +2,8 @@
 title: Extraction, Generation-based MRC
 date: 2024-09-30
 categories: machine-learning
+tags: ["nlp", "question-answering"]
+excerpt: "추출 기반 기계 독해"
 ---
 
 ## Extraction-based MRC
@@ -129,4 +131,3 @@ BertForQuestionAnswering(
   )
   (qa_outputs): Linear(in_features=768, out_features=2, bias=True)
 )
-```

@@ -7,6 +7,8 @@ tags:
 - RLHF
 - AI
 - Machine Learning
+- nlp
+- fine-tuning
 ---
 LLM을 더 안전하고 유용하게 만들기 위한 Instruction Tuning 프로세스
 

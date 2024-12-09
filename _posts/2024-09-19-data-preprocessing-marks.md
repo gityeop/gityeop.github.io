@@ -1,5 +1,7 @@
 ---
 title: 데이터 전처리 고민흔적 data preprocessing marks
+excerpt: "데이터 전처리 체크리스트"
+tags: ["data-preprocessing", "data-science"]
 date: 2024-09-19
 categories:
 ---

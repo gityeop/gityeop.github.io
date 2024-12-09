@@ -2,6 +2,7 @@
 title: Unit Testing
 date: 2024-10-11
 categories:
+tags: ["testing", "development"]
 ---
 
 유닛 테스트(Unit Testing)는 소프트웨어 개발에서 개별 코드 단위(함수, 메서드 등)를 독립적으로 테스트하여 예상대로 동작하는지 확인하는 중요한 방법이다. Python에서는 내장된 `unittest` 프레임워크를 주로 사용하며, 이를 통해 코드의 신뢰성과 유지보수성을 크게 향상시킬 수 있다.
@@ -351,7 +352,7 @@ def test_save_categorized_data_with_valid_input(self):
 
 ### **f. `setUp`과 `tearDown` 활용**
 
-여러 테스트에서 공통으로 사용하는 설정은 `setUp` 메서드에 작성하여 코드 중복을 줄인다.
+여러 테스트에서 공통으로 사용하는 설정이나 데이터를 `setUp` 메서드에 작성하여 코드 중복을 줄인다.
 
 ```python
 class TestCategorizingQuestions(unittest.TestCase):
@@ -500,4 +501,3 @@ class TestMathFunctions(unittest.TestCase):
 pip install coverage
 coverage run -m unittest test_categorizing_questions.py
 coverage report
-```

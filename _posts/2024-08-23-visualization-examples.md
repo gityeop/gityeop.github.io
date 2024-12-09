@@ -1,7 +1,7 @@
 ---
-title: Dataviz
-date: 2024-08-23
-categories: machine learning
+title: "Data Visualization Examples"
+excerpt: "데이터 시각화 예시들"
+tags: ["visualization", "data-analysis"]
 ---
 
 ```python
@@ -304,9 +304,7 @@ plt.show()
 - **스파인(Spine) 조정**: 테두리 설정, 라인 두께, 색상 조정 가능.
 - **보조선/보조면 추가**: 중요한 데이터 포인트 강조를 위해 가로선, 세로선 및 보조면 추가 가능.
 
-#### 17. \*\*스파인,
-
-보조선, 보조면에서 사용되는 주요 함수와 메서드\*\*
+#### 17. **스파인, 보조선, 보조면에서 사용되는 주요 함수와 메서드**
 
 - **`ax.spines['left'].set_position('center')`**: 스파인의 위치를 중앙으로 설정하는 메서드.
 - **`ax.axhline(y=0, color='k')`**: 가로 보조선을 그리는 함수.

@@ -2,6 +2,8 @@
 title: 맥북 정각마다 차임벨 설정하기
 date: 2024-07-24
 categories: productivity
+tags: ["macos", "settings"]
+excerpt: "맥북 정각마다 차임벨 설정하기"
 ---
 
 단계는 3단계로 나뉜다.

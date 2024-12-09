@@ -2,6 +2,8 @@
 title: Week1 학습 회고
 date: 2024-08-09
 categories: machine-learning
+excerpt: "1주차 학습 정리"
+tags: ["study-notes", "machine-learning"]
 ---
 
 [Vector](https://gityeop.github.io/math-for-ml/Vector/)

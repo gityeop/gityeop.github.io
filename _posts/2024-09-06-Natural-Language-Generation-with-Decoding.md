@@ -1,7 +1,9 @@
 ---
-title: Natural Language Generation with Decoding
+title: "Natural Language Generation with Decoding"
 date: 2024-09-06
 categories: machine-learning
+excerpt: "디코딩을 활용한 자연어 생성"
+tags: ["nlp", "text-generation"]
 ---
 
 [Natural Language Generation with Decoding](https://www.boostcourse.org/boostcampaitech7/lecture/1544453?isDesc=false)

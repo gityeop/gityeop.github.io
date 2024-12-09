@@ -1,7 +1,9 @@
 ---
-title: Python data handling
+title: "Python Data Handling"
 date: 2024-07-13
 categories: python-basic
+excerpt: "파이썬 데이터 처리"
+tags: ["python", "data-processing"]
 ---
 
 1. CSV

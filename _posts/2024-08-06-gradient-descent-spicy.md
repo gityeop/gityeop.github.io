@@ -2,6 +2,8 @@
 title: 경사하강법 매운 맛 Gradient Descent(Spicy)
 date: 2024-08-06
 categories: math-for-ml
+tags: ["deep-learning", "optimization"]
+excerpt: "고급 경사하강법"
 ---
 
 ### 1. 경사하강법의 기본 개념

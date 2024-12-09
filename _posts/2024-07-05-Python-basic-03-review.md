@@ -1,5 +1,7 @@
 ---
-title: Python 기본 문법 - Function and Console I/O(복습용)
+title: "Python Basic Review Part 3"
+excerpt: "파이썬 기초 리뷰 3"
+tags: ["python", "programming"]
 date: 2024-07-05
 categories: python-basic
 ---

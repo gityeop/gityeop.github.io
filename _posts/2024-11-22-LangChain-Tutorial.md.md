@@ -2,6 +2,8 @@
 title: LangChain 튜토리얼 가이드
 date: 2024-11-22
 categories: machine-learning
+excerpt: "랭체인 튜토리얼"
+tags: ["langchain", "llm"]
 ---
 <!-- TOC -->
 
@@ -172,4 +174,3 @@ class QuestionFormatValidator(BaseModel):
     answer: str = Field(description="정답")
     is_error: int = Field(description="오류 여부 (1: 오류, 0: 정상)")
     error_type: str = Field(description="오류 유형 설명")
-```

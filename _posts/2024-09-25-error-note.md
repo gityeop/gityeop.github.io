@@ -2,6 +2,8 @@
 title: 에러 수리 기록
 date: 2024-09-25
 categories: machine_learning
+excerpt: "에러 해결 노트"
+tags: ["debugging", "error-handling"]
 ---
 
 ## 모델은 업데이트 되고 있지만 모델의 토크나이저는 업데이트 되고 있지 않아서 생기는 문제
@@ -195,7 +197,6 @@ Traceback (most recent call last):
 BrokenPipeError: [Errno 32] Broken pipe
 
 Set the environment variable HYDRA_FULL_ERROR=1 for a complete stack trace.
-```
 
 ### 해결책
 
@@ -264,4 +265,3 @@ To view examples of installing some common dependencies, click the
 ```
 !pip uninstall -y datasets transformers pyarrow tokenizers
 !pip install datasets==2.15.0 transformers==4.25.1 pyarrow==14.0.1
-```
