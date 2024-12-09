@@ -3,7 +3,7 @@ title: 에러 수리 기록
 date: 2024-09-25
 categories: machine_learning
 excerpt: "에러 해결 노트"
-tags: ["programming/debugging"]
+tags: ["debugging"]
 ---
 
 ## 모델은 업데이트 되고 있지만 모델의 토크나이저는 업데이트 되고 있지 않아서 생기는 문제
@@ -159,7 +159,7 @@ Compile with TORCH_USE_CUDA_DSA to enable device-side assertions.
 
 
 Set the environment variable HYDRA_FULL_ERROR=1 for a complete stack trace.
-wandb: 🚀 View run rare-sweep-2 at: https://wandb.ai/freiheit517-boostcamp/sangyeop/runs/bu7s6f5x
+wandb: 🚀 View run rare-sweep-2 at: https://wandb.freiheit517-boostcamp/sangyeop/runs/bu7s6f5x
 wandb: Find logs at: wandb/run-20240925_021415-bu7s6f5x/logs
 wandb: Agent Starting Run: q6m2wgj7 with config:
 wandb:  plm_name: snunlp/KR-ELECTRA-discriminator

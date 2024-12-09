@@ -1,8 +1,8 @@
 ---
 title: Python 기본 문법 - variable, list, operations(복습용)
 date: 2024-07-05
-categories: programming/python
-tags: ["programming/python", "programming/basics"]
+categories: python
+tags: ["python", "basics"]
 related_posts:
   - "2024-07-05-Python-basic-02.md"
 ---

@@ -3,7 +3,7 @@ title: LangChain 튜토리얼 가이드
 date: 2024-11-22
 categories: machine-learning
 excerpt: "랭체인 튜토리얼"
-tags: ["ai/llm", "tools/langchain", "blog/tutorial"]
+tags: ["llm", "langchain", "tutorial"]
 ---
 <!-- TOC -->
 

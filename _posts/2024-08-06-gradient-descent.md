@@ -3,7 +3,7 @@ title: 경사하강법 순한 맛 Gradient Descent(Mild)
 date: 2024-08-06
 categories: math-for-ml
 excerpt: "경사하강법 이해하기"
-tags: ["ai/deep-learning", "science/optimization", "science/mathematics"]
+tags: ["deep-learning", "optimization", "mathematics"]
 ---
 
 ## 미분(differentiation)

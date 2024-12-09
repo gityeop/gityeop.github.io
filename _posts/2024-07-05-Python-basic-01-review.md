@@ -1,7 +1,7 @@
 ---
 title: "Python Basic Review Part 1"
 excerpt: "파이썬 기초 리뷰 1"
-tags: ["programming/python", "programming/basics"]
+tags: ["python"]
 date: 2024-07-05
 categories: python-basic
 related_posts:

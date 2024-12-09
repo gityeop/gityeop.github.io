@@ -2,7 +2,7 @@
 title: yabai+skhd 튜토리얼(2024)
 date: 2024-07-20
 categories: productivity
-tags: ["tools/macos", "tools/productivity"]
+tags: ["macos", "productivity"]
 ---
 
 ## yabai+skhd 소개
@@ -40,7 +40,7 @@ yabai [--load-sa|--uninstall-sa|--install-service|--uninstall-service|--start-se
 ### yabai 설정 파일 만들기(yabairc)
 
 ```zsh
-cd $HOME/.config/ && mkdir -p yabai && touch yabai/yabairc
+cd $HOME/.config/ && mkdir -p yabai && touch yabyabairc
 ```
 
 - yabai 폴더 열기
@@ -60,7 +60,7 @@ open ~/.config/yabai
 yabai -m query <COMMAND> [<PROPERTIES>] [<ARGUMENT>]
 ```
 
-[yabai documentation](https://github.com/koekeishiya/yabai/blob/master/doc/yabai.asciidoc)
+[yabai documentation](https://github.com/koekeishiya/yabblob/master/doc/yabai.asciidoc)
 
 1. yabai: Yabai 프로그램을 실행하는 기본 명령어입니다.
 2. -m: Yabai로 명령을 보내기 위한 플래그입니다.
@@ -189,7 +189,7 @@ yabai -m config menubar_opacity 0.0
 # it will be able to run the command without password
 #
 # see this wiki page for information:
-#  - https://github.com/koekeishiya/yabai/wiki/Installing-yabai-(latest-release)
+#  - https://github.com/koekeishiya/yabwiki/Installing-yabai-(latest-release)
 sudo yabai --load-sa
 yabai -m signal --add event=dock_did_restart action="sudo yabai --load-sa"
 # move window and focus desktop

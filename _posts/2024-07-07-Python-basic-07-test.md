@@ -1,7 +1,7 @@
 ---
 title: "Python Basic Test 7"
 excerpt: "파이썬 기초 테스트 7"
-tags: ["programming/python", "programming/basics"]
+tags: ["python", "basics"]
 date: 2024-07-22
 categories: python-basic
 ---

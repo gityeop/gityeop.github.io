@@ -2,7 +2,7 @@
 title: Pythonic Code
 date: 2024-07-07
 categories: python-basic
-tags: ["programming/python", "programming/basics"]
+tags: ["python", "basics"]
 ---
 
 ## Overview

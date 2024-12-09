@@ -1,7 +1,7 @@
 ---
 title: "Transformer Part 1"
 excerpt: "트랜스포머 모델 이해하기"
-tags: ["ai/nlp", "ai/deep-learning", "ai/transformer"]
+tags: ["nlp", "deep-learning", "transformer"]
 date: 2024-09-06
 categories: machine-learning
 ---

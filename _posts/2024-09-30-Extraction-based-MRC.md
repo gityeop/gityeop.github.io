@@ -2,7 +2,7 @@
 title: Extraction, Generation-based MRC
 date: 2024-09-30
 categories: machine-learning
-tags: ["ai/nlp"]
+tags: ["nlp"]
 excerpt: "추출 기반 기계 독해"
 ---
 

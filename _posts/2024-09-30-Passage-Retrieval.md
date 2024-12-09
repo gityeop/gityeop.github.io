@@ -3,7 +3,7 @@ title: Passage Retrieval
 date: 2024-10-11
 categories: machine-learning
 excerpt: "문서 검색"
-tags: ["ai/information-retrieval", "ai/nlp", "ai/search"]
+tags: ["information-retrieval", "nlp", "search"]
 ---
 
 - [Passage Embedding and Sparse Embedding](#passage-embedding-and-sparse-embedding)

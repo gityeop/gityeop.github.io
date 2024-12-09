@@ -1,7 +1,7 @@
 ---
 title: "Jekyll 블로그에 태그 시스템 추가하기"
 categories: github-blog
-tags: ['blog/jekyll']
+tags: ['jekyll']
 ---
 
 Jekyll 블로그에 태그 시스템을 추가하는 방법을 단계별로 설명하겠습니다. 이 가이드를 따라하면 블로그 포스트를 태그로 분류하고, 태그별 페이지를 자동으로 생성할 수 있습니다.

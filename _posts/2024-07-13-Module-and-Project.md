@@ -2,7 +2,7 @@
 title: Module and Project Structure
 date: 2024-07-13
 categories: python-basic
-tags: ["programming/python", "programming/project-structure"]
+tags: ["python", "project-structure"]
 ---
 
 # Module & Package 개요

@@ -2,7 +2,7 @@
 title: String and advanced function concept(복습용)
 date: 2024-07-06
 categories: python-basic
-tags: ["programming/python", "programming/basics"]
+tags: ["python", "basics"]
 ---
 <html lang="ko">
 <head>

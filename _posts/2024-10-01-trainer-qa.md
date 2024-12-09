@@ -1,7 +1,7 @@
 ---
 title: "Trainer Q&A"
 excerpt: "트레이너 관련 질문과 답변"
-tags: ["ai/deep-learning", "ai/huggingface"]
+tags: ["deep-learning", "huggingface"]
 categories: machine-learning
 ---
 

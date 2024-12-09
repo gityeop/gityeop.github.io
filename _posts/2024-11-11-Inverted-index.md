@@ -2,7 +2,7 @@
 title: Inverted Index란?
 date: 2024-11-11
 categories: machine-learning
-tags: ["ai/information-retrieval", "ai/search", "science/algorithms"]
+tags: ["information-retrieval", "search", "algorithms"]
 ---
 
 - [Inverted Index란?](#inverted-index란)

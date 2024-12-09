@@ -1,7 +1,7 @@
 ---
 title: 데이터 전처리 고민흔적 data preprocessing marks
 excerpt: "데이터 전처리 체크리스트"
-tags: ["ai/data-preprocessing", "ai/data-analysis", "blog/study-notes"]
+tags: ["data-preprocessing", "data-analysis", "study-notes"]
 date: 2024-09-19
 categories:
 ---
