@@ -22,16 +22,12 @@
             </li>
           {%- endfor -%}
         </ul>
-        
         {% if site.search == true %}
-        <div class="search-wrapper">
-          <form class="search-form" action="{{ site.baseurl }}/search/" method="get">
-            <input type="text" class="search-input" name="q" placeholder="Search" aria-label="Search">
-            <i class="fas fa-search search-icon"></i>
-          </form>
-        </div>
+        <button class="search__toggle" type="button">
+          <span class="visually-hidden">{{ site.data.ui-text[site.locale].search_label | default: "Toggle search" }}</span>
+          <i class="fas fa-search"></i>
+        </button>
         {% endif %}
-        
         <button class="greedy-nav__toggle hidden" type="button">
           <span class="visually-hidden">{{ site.data.ui-text[site.locale].menu_label | default: "Toggle menu" }}</span>
           <div class="navicon"></div>
@@ -40,14 +36,4 @@
       </nav>
     </div>
   </div>
-  <div class="search-content hidden">
-    <div class="search-content__inner-wrap">
-      <!-- 여기서 JS를 통해 검색 결과를 동적으로 삽입 -->
-    </div>
-  </div>
 </div>
-
-<!-- Lunr.js, search.js 로드 (site.baseurl 및 파일 위치는 상황에 맞추어 조정) -->
-<script src="{{ '/assets/js/lunr.min.js' | relative_url }}"></script>
-<script src="{{ '/assets/js/search-data.json' | relative_url }}"></script>
-<script src="{{ '/assets/js/search.js' | relative_url }}"></script>
