@@ -1,0 +1,29 @@
+.tag-cloud {
+  margin-bottom: 2em;
+  padding: 1em;
+  background: #f3f6f6;
+  border-radius: 4px;
+
+  .tag-cloud-item {
+    display: inline-block;
+    margin: 0.2em;
+    padding: 0.3em 0.6em;
+    background: #fff;
+    border-radius: 15px;
+    font-size: 0.8em;
+    color: $text-color;
+    text-decoration: none;
+    transition: all 0.3s ease;
+
+    &:hover {
+      background: $primary-color;
+      color: #fff;
+      transform: translateY(-2px);
+    }
+
+    .tag-cloud-count {
+      font-size: 0.8em;
+      color: $gray;
+    }
+  }
+}
