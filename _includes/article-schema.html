@@ -1,0 +1,36 @@
+{% if page.date %}
+{%- assign schema_author = page.author | default: site.author -%}
+{%- assign schema_author_data = site.data.authors[schema_author] | default: schema_author -%}
+{%- assign schema_description = page.description | default: page.excerpt | default: site.description | markdownify | strip_html | newline_to_br | strip_newlines | replace: '<br />', ' ' | strip | truncate: 200 -%}
+{%- assign schema_image = page.header.og_image | default: page.header.overlay_image | default: page.header.image | default: site.og_image -%}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": {{ page.title | jsonify }},
+  "description": {{ schema_description | jsonify }},
+  "url": {{ page.url | absolute_url | jsonify }},
+  "datePublished": "{{ page.date | date_to_xmlschema }}",
+  {% if page.last_modified_at %}"dateModified": "{{ page.last_modified_at | date_to_xmlschema }}",{% else %}"dateModified": "{{ page.date | date_to_xmlschema }}",{% endif %}
+  {% if schema_image %}"image": {{ schema_image | absolute_url | jsonify }},{% endif %}
+  "author": {
+    "@type": "Person",
+    "name": {% if schema_author_data.name %}{{ schema_author_data.name | jsonify }}{% else %}{{ schema_author | jsonify }}{% endif %},
+    "url": {{ '/' | absolute_url | jsonify }}
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": {{ site.title | jsonify }},
+    "url": {{ '/' | absolute_url | jsonify }}{% if site.og_image %},
+    "logo": {
+      "@type": "ImageObject",
+      "url": {{ site.og_image | absolute_url | jsonify }}
+    }{% endif %}
+  },
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": {{ page.url | absolute_url | jsonify }}
+  }
+}
+</script>
+{% endif %}

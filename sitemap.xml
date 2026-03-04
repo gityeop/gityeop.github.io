@@ -5,6 +5,7 @@
     {% for post in site.posts %}
     <url>
         <loc>{{ site.url }}{{ post.url | remove: 'index.html' }}</loc>
+        <lastmod>{{ post.last_modified_at | default: post.date | date_to_xmlschema }}</lastmod>
     </url>
     {% endfor %}
 
@@ -13,6 +14,7 @@
     {% if page.layout != 'feed' %}
     <url>
         <loc>{{ site.url }}{{ page.url | remove: 'index.html' }}</loc>
+        <lastmod>{{ site.time | date_to_xmlschema }}</lastmod>
     </url>
     {% endif %}
     {% endif %}
