@@ -18,11 +18,11 @@ minimal_mistakes_skin    : "contrast" # "air", "aqua", "contrast", "dark", "dirt
 future                   : true
 locale                   : "ko-KR"
 rtl                      : # true, false (default) # turns direction of the page into right to left for RTL languages
-title                    : "gityeop blog"
+title                    : "gityeop | AI Engineer"
 title_separator          : "-"
 subtitle                 : # site tagline that appears below site title in masthead
 name                     : "gityeop"
-description              : "An testing website."
+description              : "제품·평가·재현 가능한 AI 시스템을 만드는 임상엽의 포트폴리오와 기술 기록"
 url                      : "https://gityeop.github.io"
 baseurl                  : ""
 repository               : "gityeop/gityeop.github.io"
@@ -109,9 +109,9 @@ analytics:
 
 # Site Author
 author:
-  name             : "gityeop"
+  name             : "임상엽"
   avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
-  bio              : "정리용 블로그"
+  bio              : "제품·평가·재현 추론을 연결하는 AI Engineer"
   location         : "Korea"
   email            :
   links:
@@ -120,7 +120,7 @@ author:
       # url: "mailto:your.name@email.com"
     - label: "Website"
       icon: "fas fa-fw fa-link"
-      # url: "https://your-website.com"
+      url: "https://gityeop.github.io/portfolio/"
     - label: "Twitter"
       icon: "fab fa-fw fa-twitter-square"
       # url: "https://twitter.com/"
@@ -129,7 +129,7 @@ author:
       # url: "https://facebook.com/"
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
-      # url: "https://github.com/"
+      url: "https://github.com/gityeop"
     - label: "Instagram"
       icon: "fab fa-fw fa-instagram"
       # url: "https://instagram.com/"
@@ -162,6 +162,7 @@ include:
   - .htaccess
   - _pages
 exclude:
+  - "*.gemspec"
   - "*.sublime-project"
   - "*.sublime-workspace"
   - vendor
