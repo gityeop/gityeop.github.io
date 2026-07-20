@@ -1,5 +1,7 @@
 # main links
 main:
+  - title: Portfolio
+    url: /portfolio/
   - title: Programming 
     children:
       - title: "Data Structure and Algorithm" 
